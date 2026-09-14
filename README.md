@@ -1,4 +1,4 @@
-# Leon Weigang Portfolio
+# Portfolio
 
 Pure HTML, CSS and JavaScript implementation based on the supplied portfolio checklist and design screenshots.
 
