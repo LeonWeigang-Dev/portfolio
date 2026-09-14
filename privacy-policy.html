@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Datenschutzerklärung für die Portfolio-Webseite von Leon Weigang.">
+  <meta name="theme-color" content="#11192b">
+  <title>Datenschutz | Leon Weigang</title>
+  <link rel="icon" href="assets/placeholders/favicon-placeholder.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="legal-page">
+  <a class="skip-link" href="#legal-content">Skip to content</a>
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a class="brand" href="index.html#hero" aria-label="Leon Weigang - Startseite">Leo<span class="brand-accent">n</span></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="index.html#about" data-i18n="navAbout">About me</a>
+        <a href="index.html#skills" data-i18n="navSkills">Skills</a>
+        <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="index.html#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch"><button type="button" class="language-button" data-language="de">DE</button><button type="button" class="language-button is-active" data-language="en">EN</button></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile Hauptnavigation">
+      <a href="index.html#about" data-i18n="navAbout">About me</a>
+      <a href="index.html#skills" data-i18n="navSkills">Skills</a>
+      <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+      <a href="index.html#contact" data-i18n="navContact">Contact</a>
+      <div class="mobile-language">
+        <button type="button" class="language-button" data-language="en">EN</button>
+        <span>/</span>
+        <button type="button" class="language-button" data-language="de">DE</button>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="legal-content" class="legal-main">
+    <div class="page-container">
+      <a class="legal-back" href="index.html">← <span data-i18n="navBack">Back to portfolio</span></a>
+      <div class="legal-heading"><h1 data-i18n="privacyTitle">Privacy Policy</h1></div>
+      <article class="legal-content">
+        <h2 data-i18n="privacyIntroHeading">General information</h2>
+        <p data-i18n="privacyIntroText">This page is a project template. Before going live, replace the text below with a privacy policy that accurately describes your hosting, analytics, fonts, contact form provider, embedded content and any other services used on this website.</p>
+        <h2 data-i18n="privacyContactHeading">Contact form</h2>
+        <p data-i18n="privacyContactText">The contact form should only transmit the personal data that is necessary to process your enquiry. Replace the placeholder Formspree endpoint in the HTML with your configured provider and make sure its privacy documentation is reflected here.</p>
+        <h2 data-i18n="privacyHostingHeading">Hosting and server logs</h2>
+        <p data-i18n="privacyHostingText">Your final privacy policy should state which hosting provider is used, which technical data may be processed in server logs and how long that data is retained.</p>
+        <h2 data-i18n="privacyRightsHeading">Your rights</h2>
+        <p data-i18n="privacyRightsText">Your final privacy policy should explain the applicable data protection rights and provide a current contact route for privacy enquiries.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-container footer-inner">
+      <div class="footer-brand-wrap"><a class="brand footer-brand" href="index.html#hero">Leo<span class="brand-accent">n</span></a><small>Frontend Developer</small></div>
+      <p>© 2026 Leon Weigang</p>
+      <nav aria-label="Footer"><a href="legal-notice.html">Impressum</a><a href="privacy-policy.html">Datenschutz</a></nav>
+      <div class="footer-socials"><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub (replace URL)"><span class="icon-placeholder">G</span></a><a href="mailto:your-email@example.com" aria-label="E-Mail (replace address)"><span class="icon-placeholder">✉</span></a><a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (replace URL)"><span class="icon-placeholder">in</span></a></div>
+    </div>
+  </footer>
+</body>
+</html>
