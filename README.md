@@ -1,34 +1,43 @@
-# Portfolio
+# Leon Weigang Portfolio – HTML / CSS / JavaScript
 
-Pure HTML, CSS and JavaScript implementation based on the supplied portfolio checklist and design screenshots.
+This version was rebuilt from the supplied section screenshots and folder-structure screenshot.
 
-## Files
+## Structure
 
-- `index.html` - main portfolio page
-- `style.css` - responsive styling, layout and accessibility states
-- `script.js` - language switcher, mobile menu and contact form validation/submission
-- `legal-notice.html` - legal notice template
-- `privacy-policy.html` - privacy policy template
-- `assets/placeholders/favicon-placeholder.svg` - temporary favicon
+- `index.html` – main portfolio
+- `style.css` – complete responsive styling
+- `script.js` – menu, language state, form validation and scroll reveal animation
+- `legal-notice.html` – legal notice template
+- `privacy-policy.html` – privacy policy template
+- `assets/` – asset folders matching the structure shown in the supplied screenshot
 
-## Replace before publishing
+## Asset replacement
 
-1. Portrait and project images in the marked placeholder areas.
-2. GitHub / LinkedIn / email URLs.
-3. Project live links and repository links.
-4. Contact form endpoint in `index.html`.
-5. Real legal notice and privacy policy text.
-6. Any placeholder project content and testimonial.
-7. The favicon when your final branding is ready.
+The uploaded ZIP contained the screenshots of the design and asset folder structure, but not the original asset binaries. Therefore this project contains lightweight placeholder assets using the same filenames.
 
-## Design constraints implemented
+Replace the placeholder files inside `assets/` with your original images/icons. The HTML already points to these paths, so no HTML changes are required for the normal asset replacement workflow.
 
-- Content width capped at 1440px.
-- Minimum supported viewport width: 320px.
-- Hero uses `min-height: 100vh`.
-- Responsive desktop/tablet/mobile layouts.
-- Base text size is 16px; mobile does not scale below 16px.
-- Visible focus states, skip link, semantic landmarks, ARIA attributes and reduced-motion support.
-- Contact validation is triggered on blur and the submit button stays disabled until all required fields are valid and privacy consent is checked.
-- Validation messages reserve space to avoid layout shifts.
-- All JavaScript functions have English JSDoc documentation.
+Important paths include:
+
+- `assets/aboutme_section/leon_foto.jpg`
+- `assets/aboutme_section/located_icon.svg`
+- `assets/aboutme_section/mindset_icon.svg`
+- `assets/aboutme_section/problem_icon.svg`
+- `assets/portfolio_section/elpolloloco_portfolio.png`
+- `assets/portfolio_section/join_portfolio.png`
+- `assets/portfolio_section/daBubble_portfolio.png`
+- `assets/portfolio_section/pokedex_portfolio.png`
+- `assets/skills_section/*.svg`
+- `assets/backgrounds/*.svg`
+- `assets/hero_section/*.svg`
+- `assets/footer_section/*.svg`
+
+## Animation
+
+Sections and content use `IntersectionObserver` reveal animations. Hover effects are deliberately subtle for now and can be refined later.
+
+The page also respects `prefers-reduced-motion`.
+
+## Contact form
+
+Replace the placeholder Formspree URL in `index.html` with your real endpoint. Then replace the social links and email address with your real profiles.
