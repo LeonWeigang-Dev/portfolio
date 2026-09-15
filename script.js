@@ -18,11 +18,20 @@ function setLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language;
   document.title = translations[language].title;
+
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.dataset.i18n;
+    if (translations[language][key]) {
+      element.textContent = translations[language][key];
+    }
+  });
+
   document.querySelectorAll('.language-button').forEach((button) => {
     const isActive = button.dataset.language === language;
     button.classList.toggle('is-active', isActive);
     button.setAttribute('aria-pressed', String(isActive));
   });
+
   updateMenuLabel();
   closeMobileMenu();
 }
