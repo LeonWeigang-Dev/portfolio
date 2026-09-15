@@ -7,7 +7,7 @@
   <meta name="description" content="Impressum für die Portfolio-Webseite von Leon Weigang.">
   <meta name="theme-color" content="#11192b">
   <title>Impressum | Leon Weigang</title>
-  <link rel="icon" href="assets/placeholders/favicon-placeholder.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,58 +15,102 @@
   <script src="script.js" defer></script>
 </head>
 
-<body class="legal-page">
-  <a class="skip-link" href="#legal-content">Skip to content</a>
-  <header class="site-header">
+<body class="legal-page" data-page-title-key="legalPageTitle">
+  <a class="skip-link" href="#legal-content" data-i18n="skipContent">Zum Inhalt springen</a>
+
+  <header class="site-header" id="site-header">
     <div class="page-container header-inner">
-      <a class="brand" href="index.html#hero" aria-label="Leon Weigang - Startseite">Leon<span
-          class="brand-accent">k</span></a>
-      <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html#hero" aria-label="Leon Weigang home" data-i18n-aria="homeAria">
+        <span class="logo-white">Leo</span><span class="logo-accent">n</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="index.html#about" data-i18n="navAbout">About me</a>
         <a href="index.html#skills" data-i18n="navSkills">Skills</a>
         <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
         <a href="index.html#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <div class="header-actions">
-        <div class="language-switch">
-          <button type="button" class="language-button" data-language="de">DE</button>
-          <button type="button" class="language-button is-active" data-language="en">EN</button>
+      <div class="header-right">
+        <div class="language-switch" aria-label="Language switcher" data-i18n-aria="languageSwitcher">
+          <button type="button" class="language-button" data-language="de" aria-pressed="true">DE</button>
+          <button type="button" class="language-button is-active" data-language="en" aria-pressed="false">EN</button>
         </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Open menu" data-i18n-aria="menuOpen">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <main id="legal-content" class="legal-main">
-    <div class="page-container">
-      <a class="legal-back" href="index.html">← <span data-i18n="navBack">Back to portfolio</span></a>
-      <div class="legal-heading">
-        <h1 data-i18n="legalTitle">Legal Notice</h1>
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="mobileNavigation">
+      <a href="index.html#about" data-i18n="navAbout">About me</a>
+      <a href="index.html#skills" data-i18n="navSkills">Skills</a>
+      <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+      <a href="index.html#contact" data-i18n="navContact">Contact</a>
+      <div class="mobile-nav-footer">
+        <button type="button" class="language-button" data-language="de" aria-pressed="true">DE</button>
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="false">EN</button>
       </div>
-      <article class="legal-content">
-        <h2 data-i18n="legalImprintHeading">Imprint</h2>
-        <p><strong>Leon Weigang</strong><br>[Street and house number]<br>[Postcode and city]<br>Germany</p>
-        <h2>Contact</h2>
-        <p>E-mail: [your-email@example.com]</p>
-        <h2 data-i18n="legalDisclaimerHeading">Disclaimer</h2>
-        <p data-i18n="legalDisclaimerText">This legal notice is a project placeholder and must be completed with your
-          real business and contact information before publication. Please adapt all mandatory legal text to your
-          situation and have it checked where appropriate.</p>
+    </nav>
+  </aside>
+
+  <main id="legal-content" class="legal-main">
+    <img class="legal-glow legal-glow-purple" src="assets/backgrounds/purple_shadow_footer_V2.svg" alt="" aria-hidden="true">
+    <img class="legal-glow legal-glow-cyan" src="assets/backgrounds/blue_shadow_1.svg" alt="" aria-hidden="true">
+
+    <div class="page-container legal-shell">
+      <a class="legal-back" href="index.html#hero">← <span data-i18n="navBack">Back to portfolio</span></a>
+
+      <header class="legal-heading reveal reveal-up">
+        <div class="heading-accent" aria-hidden="true"></div>
+        <div>
+          <p class="legal-kicker">Leon Weigang · Frontend Developer</p>
+          <h1 data-i18n="legalTitle">Legal Notice</h1>
+        </div>
+      </header>
+
+      <article class="legal-content reveal reveal-up">
+        <section class="legal-card">
+          <span class="legal-card-number" aria-hidden="true">01</span>
+          <h2 data-i18n="legalImprintHeading">Imprint</h2>
+          <p><strong>Leon Weigang</strong><br>[Street and house number]<br>[Postcode and city]<br>Germany</p>
+        </section>
+
+        <section class="legal-card">
+          <span class="legal-card-number" aria-hidden="true">02</span>
+          <h2 data-i18n="legalContactHeading">Contact</h2>
+          <p>E-mail: [your-email@example.com]</p>
+        </section>
+
+        <section class="legal-card">
+          <span class="legal-card-number" aria-hidden="true">03</span>
+          <h2 data-i18n="legalDisclaimerHeading">Disclaimer</h2>
+          <p data-i18n="legalDisclaimerText">This legal notice is a project placeholder. Replace the personal and business details with your real information and complete the legally required content before publication.</p>
+        </section>
       </article>
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer legal-footer">
     <div class="page-container footer-inner">
-      <div class="footer-brand-wrap"><a class="brand footer-brand" href="index.html#hero">Leon<span
-            class="brand-accent">k</span></a><small>Frontend Developer</small></div>
-      <p>© 2026 Leon Weigang</p>
-      <nav aria-label="Footer"><a href="legal-notice.html">Impressum</a><a href="privacy-policy.html">Datenschutz</a>
-      </nav>
-      <div class="footer-socials"><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
-          aria-label="GitHub (replace URL)"><span class="icon-placeholder">G</span></a><a
-          href="mailto:your-email@example.com" aria-label="E-Mail (replace address)"><span
-            class="icon-placeholder">✉</span></a><a href="https://www.linkedin.com/in/your-profile/" target="_blank"
-          rel="noopener noreferrer" aria-label="LinkedIn (replace URL)"><span class="icon-placeholder">in</span></a>
+      <div class="footer-left">
+        <a class="footer-logo" href="index.html#hero" aria-label="Leon Weigang home">
+          <span>Leo</span><b>n</b>
+        </a>
+        <a href="legal-notice.html" data-i18n="legalNotice">Legal Notice</a>
+      </div>
+      <p>© Leon Weigang 2026</p>
+      <div class="footer-socials">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="assets/footer_section/github_icon.svg" alt="">
+        </a>
+        <a href="mailto:your-email@example.com" aria-label="Email">
+          <img src="assets/footer_section/mail_icon.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="assets/footer_section/linkedIn_icon.svg" alt="">
+        </a>
       </div>
     </div>
   </footer>

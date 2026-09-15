@@ -1,43 +1,35 @@
 # Leon Weigang Portfolio – HTML / CSS / JavaScript
 
-This version was rebuilt from the supplied section screenshots and folder-structure screenshot.
+This build keeps the existing portfolio visual design and adds the requested responsive and interaction refinements.
 
 ## Structure
 
-- `index.html` – main portfolio
+- `index.html` – main portfolio page
 - `style.css` – complete responsive styling
-- `script.js` – menu, language state, form validation and scroll reveal animation
-- `legal-notice.html` – legal notice template
-- `privacy-policy.html` – privacy policy template
-- `assets/` – asset folders matching the structure shown in the supplied screenshot
+- `script.js` – language switching, mobile menu, form validation, testimonial switching and reveal animations
+- `legal-notice.html` – styled legal notice template
+- `privacy-policy.html` – styled privacy policy template
+- `assets/` – supplied project images, icons and background artwork
 
-## Asset replacement
+## Implemented refinements
 
-The uploaded ZIP contained the screenshots of the design and asset folder structure, but not the original asset binaries. Therefore this project contains lightweight placeholder assets using the same filenames.
+- Responsive tuning down to exactly `320px`
+- Wide-screen container handling for `1440px+`
+- Skills background artwork fades out towards the bottom while retaining its size and position
+- Portfolio cards show the screenshot-inspired hover overlay with `Github` and `Live test` buttons, project description and technologies
+- Hover/focus animations slide the top actions down and the lower information panel up
+- All four supplied portfolio preview images are included
+- Contact fields get a red validation border after they have been left while invalid
+- Legal Notice and Privacy Policy use the same visual language as the main portfolio
+- DE/EN language switching also works on the legal pages
+- Testimonial carousel supports previous/next navigation and direct dot selection
+- Testimonial portraits change with the active testimonial
+- Existing reveal animations and `prefers-reduced-motion` support remain active
 
-Replace the placeholder files inside `assets/` with your original images/icons. The HTML already points to these paths, so no HTML changes are required for the normal asset replacement workflow.
+## Placeholder project data
 
-Important paths include:
+The supplied screenshots only contained detailed hover content for El Pollo Loco and Join. Therefore those two cards use the shown descriptions and technology lists. The daBubble and Pokédex cards keep clearly marked placeholders until their exact descriptions and technologies are provided.
 
-- `assets/aboutme_section/leon_foto.jpg`
-- `assets/aboutme_section/located_icon.svg`
-- `assets/aboutme_section/mindset_icon.svg`
-- `assets/aboutme_section/problem_icon.svg`
-- `assets/portfolio_section/elpolloloco_portfolio.png`
-- `assets/portfolio_section/join_portfolio.png`
-- `assets/portfolio_section/daBubble_portfolio.png`
-- `assets/portfolio_section/pokedex_portfolio.png`
-- `assets/skills_section/*.svg`
-- `assets/backgrounds/*.svg`
-- `assets/hero_section/*.svg`
-- `assets/footer_section/*.svg`
+## Before publishing
 
-## Animation
-
-Sections and content use `IntersectionObserver` reveal animations. Hover effects are deliberately subtle for now and can be refined later.
-
-The page also respects `prefers-reduced-motion`.
-
-## Contact form
-
-Replace the placeholder Formspree URL in `index.html` with your real endpoint. Then replace the social links and email address with your real profiles.
+Replace the placeholder Github/live URLs, social profile URLs, e-mail address, Formspree endpoint and the legal placeholder data with your real information.

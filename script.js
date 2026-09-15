@@ -59,7 +59,40 @@ const translations = {
     endpointMissing: 'Please configure your form endpoint first.',
     sending: 'Sending ...',
     success: 'Thank you! Your message has been sent successfully.',
-    failure: 'The form could not be submitted. Please try again later.'
+    failure: 'The form could not be submitted. Please try again later.',
+    github: 'Github',
+    liveTest: 'Live test',
+    projectElPolloLocoTitle: 'El Pollo Loco',
+    projectElPolloLocoDescription: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+    projectElPolloLocoTech: 'JavaScript | HTML | CSS',
+    projectJoinTitle: 'Join',
+    projectJoinDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+    projectJoinTech: 'Angular | TypeScript | HTML | CSS | Firebase',
+    projectDaBubbleTitle: 'daBubble',
+    projectPokedexTitle: 'Pokédex',
+    projectPlaceholderDescription: 'Add the project description here.',
+    projectPlaceholderTech: 'Add technologies here.',
+    altElPolloLoco: 'El Pollo Loco project preview',
+    altJoin: 'JOIN project preview',
+    altDaBubble: 'daBubble project preview',
+    altPokedex: 'Pokédex project preview',
+    legalPageTitle: 'Legal Notice | Leon Weigang',
+    privacyPageTitle: 'Privacy Policy | Leon Weigang',
+    navBack: 'Back to portfolio',
+    legalTitle: 'Legal Notice',
+    legalImprintHeading: 'Imprint',
+    legalContactHeading: 'Contact',
+    legalDisclaimerHeading: 'Disclaimer',
+    legalDisclaimerText: 'This legal notice is a project placeholder. Replace the personal and business details with your real information and complete the legally required content before publication.',
+    privacyTitle: 'Privacy Policy',
+    privacyIntroHeading: 'General information',
+    privacyIntroText: 'This page is a project template. Before going live, replace the text below with a privacy policy that accurately describes your hosting, analytics, fonts, contact form provider, embedded content and any other services used on this website.',
+    privacyContactHeading: 'Contact form',
+    privacyContactText: 'The contact form should only transmit the personal data that is necessary to process your enquiry. Replace the placeholder Formspree endpoint in the HTML with your configured provider and make sure its privacy documentation is reflected here.',
+    privacyHostingHeading: 'Hosting and server logs',
+    privacyHostingText: 'Your final privacy policy should state which hosting provider is used, which technical data may be processed in server logs and how long that data is retained.',
+    privacyRightsHeading: 'Your rights',
+    privacyRightsText: 'Your final privacy policy should explain the applicable data protection rights and provide a current contact route for privacy enquiries.'
   },
   de: {
     title: 'Leon Weigang | Frontend Entwickler',
@@ -121,7 +154,40 @@ const translations = {
     endpointMissing: 'Bitte hinterlege zuerst deinen Formular-Endpunkt.',
     sending: 'Wird gesendet ...',
     success: 'Danke! Deine Nachricht wurde erfolgreich gesendet.',
-    failure: 'Die Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut.'
+    failure: 'Die Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut.',
+    github: 'Github',
+    liveTest: 'Live test',
+    projectElPolloLocoTitle: 'El Pollo Loco',
+    projectElPolloLocoDescription: 'Jump-and-run-Spiel auf objektorientierter Basis. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu finden und gegen die verrückte Henne zu kämpfen.',
+    projectElPolloLocoTech: 'JavaScript | HTML | CSS',
+    projectJoinTitle: 'Join',
+    projectJoinDescription: 'Auf dem Kanban-System basierender Task-Manager. Erstelle und organisiere Aufgaben per Drag-and-Drop und weise Benutzer und Kategorien zu.',
+    projectJoinTech: 'Angular | TypeScript | HTML | CSS | Firebase',
+    projectDaBubbleTitle: 'daBubble',
+    projectPokedexTitle: 'Pokédex',
+    projectPlaceholderDescription: 'Projektbeschreibung hier ergänzen.',
+    projectPlaceholderTech: 'Technologien hier ergänzen.',
+    altElPolloLoco: 'Projektvorschau von El Pollo Loco',
+    altJoin: 'Projektvorschau von JOIN',
+    altDaBubble: 'Projektvorschau von daBubble',
+    altPokedex: 'Projektvorschau des Pokédex',
+    legalPageTitle: 'Impressum | Leon Weigang',
+    privacyPageTitle: 'Datenschutz | Leon Weigang',
+    navBack: 'Zurück zum Portfolio',
+    legalTitle: 'Impressum',
+    legalImprintHeading: 'Angaben gemäß Impressum',
+    legalContactHeading: 'Kontakt',
+    legalDisclaimerHeading: 'Haftungshinweis',
+    legalDisclaimerText: 'Dies ist eine Projektvorlage. Ersetze die persönlichen und geschäftlichen Angaben durch deine echten Daten und vervollständige vor der Veröffentlichung alle gesetzlich erforderlichen Inhalte.',
+    privacyTitle: 'Datenschutzerklärung',
+    privacyIntroHeading: 'Allgemeine Hinweise',
+    privacyIntroText: 'Diese Seite ist eine Projektvorlage. Vor der Veröffentlichung musst du eine Datenschutzerklärung einsetzen, die Hosting, Analyse-Tools, Schriften, Formularanbieter, eingebundene Inhalte und alle weiteren auf dieser Website verwendeten Dienste korrekt beschreibt.',
+    privacyContactHeading: 'Kontaktformular',
+    privacyContactText: 'Das Kontaktformular sollte nur die personenbezogenen Daten übertragen, die zur Bearbeitung deiner Anfrage erforderlich sind. Ersetze den Platzhalter-Endpunkt von Formspree durch deinen konfigurierten Anbieter und berücksichtige dessen Datenschutzinformationen.',
+    privacyHostingHeading: 'Hosting und Server-Logs',
+    privacyHostingText: 'In deiner endgültigen Datenschutzerklärung sollte stehen, welcher Hostinganbieter eingesetzt wird, welche technischen Daten in Server-Logs verarbeitet werden können und wie lange diese Daten gespeichert werden.',
+    privacyRightsHeading: 'Deine Rechte',
+    privacyRightsText: 'Die endgültige Datenschutzerklärung sollte die jeweils geltenden Datenschutzrechte erläutern und einen aktuellen Kontaktweg für Datenschutzanfragen nennen.'
   }
 };
 
@@ -130,41 +196,47 @@ const testimonials = [
     en: {
       text: 'Working with Leon was highly constructive. He combines clear communication with a strong attention to detail. He demonstrated exceptional commitment to the project, regularly going the extra mile to resolve critical hurdles. Leon was also responsible for the project\'s most substantial core component, which he mastered with outstanding technical skill and efficiency.',
       author: 'Curtis N.W. - Team Partner',
-      role: 'YOUR PHOTO'
+      role: 'YOUR PHOTO',
+      image: 'assets/testimonial_section/curtis.png'
     },
     de: {
       text: 'Die Zusammenarbeit mit Leon war äußerst konstruktiv. Er verbindet klare Kommunikation mit großer Liebe zum Detail. Er zeigte außergewöhnliches Engagement für das Projekt und scheute keine Mühen, um kritische Hürden zu überwinden. Leon war zudem für die wichtigste Kernkomponente des Projekts verantwortlich, die er mit herausragendem technischem Können und großer Effizienz meisterte.',
       author: 'Curtis N.W. – Teampartner',
-      role: 'DEIN FOTO'
+      role: 'DEIN FOTO',
+      image: 'assets/testimonial_section/curtis.png'
     }
   },
   {
     en: {
       text: 'Leon was a fantastic team member, on whom you can always rely completely. He stands out through a focused approach to work and was significantly responsible for the technical foundation of our project. He implemented this key element with great skill and attention to detail. In our group meetings, Leon shone through clear and understandable communication and was always ready to help the team. His expertise and commitment were a real asset to our project.',
       author: 'Kamil M. – Team Partner',
-      role: 'YOUR PHOTO'
+      role: 'YOUR PHOTO',
+      image: 'assets/testimonial_section/Kamil.png'
     },
     de: {
       text: 'Leon war ein fantastischer Teampartner, auf den man sich jederzeit voll verlassen konnte. Er zeichnete sich durch eine fokussierte Arbeitsweise aus und war maßgeblich für das technische Fundament unseres Projekts verantwortlich. Dieses Schlüsselelement setzte er mit großem Geschick und Liebe zum Detail um. In unseren Gruppengesprächen glänzte Leon durch eine klare, verständliche Kommunikation und stand dem Team immer hilfsbereit zur Seite. Seine Expertise und sein Engagement waren ein echter Gewinn für unser Projekt.',
       author: 'Kamil M. – Teampartner',
-      role: 'DEIN FOTO'
+      role: 'DEIN FOTO',
+      image: 'assets/testimonial_section/Kamil.png'
     }
   },
   {
     en: {
       text: 'Working with Leon was reliable, collaborative and enjoyable. He is curious, learns quickly and always looks for a clean technical solution.',
       author: 'Annika E. – Team Partner',
-      role: 'YOUR PHOTO'
+      role: 'YOUR PHOTO',
+      image: 'assets/testimonial_section/annika.png'
     },
     de: {
       text: 'Die Zusammenarbeit mit Leon war zuverlässig, teamorientiert und angenehm. Er lernt schnell, bleibt neugierig und sucht immer nach einer sauberen technischen Lösung.',
       author: 'Annika E. – Teampartner',
-      role: 'DEIN FOTO'
+      role: 'DEIN FOTO',
+      image: 'assets/testimonial_section/annika.png'
     }
   }
 ];
 
-let currentLanguage = 'en';
+let currentLanguage = document.documentElement.lang === 'de' ? 'de' : 'en';
 let currentTestimonial = 0;
 const form = document.getElementById('contact-form');
 const submitButton = document.getElementById('submit-button');
@@ -188,7 +260,8 @@ function setLanguage(language) {
   if (!translations[language]) return;
   currentLanguage = language;
   document.documentElement.lang = language;
-  document.title = tWithLanguage(language, 'title');
+  const pageTitleKey = document.body?.dataset.pageTitleKey;
+  document.title = pageTitleKey ? tWithLanguage(language, pageTitleKey) : tWithLanguage(language, 'title');
 
   document.querySelectorAll('[data-i18n]').forEach((element) => {
     element.textContent = translations[language][element.dataset.i18n] ?? element.textContent;
@@ -201,6 +274,9 @@ function setLanguage(language) {
   });
   document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
     element.setAttribute('placeholder', translations[language][element.dataset.i18nPlaceholder] ?? element.getAttribute('placeholder') ?? '');
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+    element.setAttribute('alt', translations[language][element.dataset.i18nAlt] ?? element.getAttribute('alt') ?? '');
   });
   document.querySelectorAll('.language-button').forEach((button) => {
     const isActive = button.dataset.language === language;
@@ -320,6 +396,7 @@ function updateSubmitButton() {
  */
 function validateForm() {
   const fields = ['name', 'email', 'message'];
+  fields.forEach((id) => document.getElementById(id)?.classList.add('is-touched'));
   const fieldsValid = fields.map((id) => validateField(document.getElementById(id))).every(Boolean);
   const privacyValid = validatePrivacy();
   updateSubmitButton();
@@ -362,11 +439,15 @@ function updateTestimonialUI() {
   const text = document.querySelector('[data-testimonial-text]');
   const author = document.querySelector('[data-testimonial-author]');
   const role = document.querySelector('[data-testimonial-role]');
-  if (!text || !author || !role) return;
+  const image = document.querySelector('[data-testimonial-image]');
+  if (!text || !author) return;
 
   text.textContent = testimonial.text;
   author.textContent = testimonial.author;
-  role.textContent = testimonial.role;
+  if (role) role.textContent = testimonial.role;
+  if (image && testimonial.image) {
+    image.src = testimonial.image;
+  }
 
   const dots = document.querySelectorAll('.testimonial-controls .dot');
   dots.forEach((dot, index) => {
@@ -433,6 +514,7 @@ function initPage() {
   });
   ['name', 'email', 'message'].forEach((id) => {
     document.getElementById(id)?.addEventListener('blur', (event) => {
+      event.target.classList.add('is-touched');
       validateField(event.target);
       updateSubmitButton();
     });
