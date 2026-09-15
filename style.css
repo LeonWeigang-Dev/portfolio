@@ -109,8 +109,6 @@ textarea:focus-visible {
 
 .logo,
 .footer-logo {
-
-    padding-left: 55px;
     padding-top: 10px;
     font-weight: 800;
     font-size: 3rem;
@@ -1010,7 +1008,7 @@ textarea:focus-visible {
 .back-to-top {
     position: absolute;
     right: 18px;
-    bottom: 63px;
+    bottom: 13px;
     width: 41px;
     height: 41px;
     border: 2px solid #fff;
@@ -1033,6 +1031,7 @@ textarea:focus-visible {
 }
 
 .footer-left {
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
