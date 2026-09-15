@@ -589,9 +589,9 @@ textarea:focus-visible {
 }
 
 .portfolio-green {
-    left: -55px;
-    bottom: -30px;
-    width: 250px
+    left: -255px;
+    bottom: -240px;
+    width: 550px
 }
 
 .portfolio-inner {
@@ -718,11 +718,14 @@ textarea:focus-visible {
 .quote-mark {
     display: flex;
     color: var(--lime);
-    font-size: 100px;
+    font-size: 150px;
+    width: 180px;
+    height: 300px;
     font-weight: 700;
     line-height: .8;
     align-self: start;
     justify-content: end;
+    z-index: 2;
 }
 
 .testimonial-card {
