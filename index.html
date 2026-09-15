@@ -16,27 +16,27 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content" data-i18n="skipContent">Skip to content</a>
 
   <header class="site-header" id="site-header">
     <div class="page-container header-inner">
-      <a class="logo" href="#hero" aria-label="Leon Weigang home">
+      <a class="logo" href="#hero" aria-label="Leon Weigang home" data-i18n-aria="homeAria">
         <span class="logo-white">Leo</span><span class="logo-accent">n</span>
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#about">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#about" data-i18n="navAbout">About me</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
       </nav>
 
       <div class="header-right">
-        <div class="language-switch" aria-label="Language switcher">
+        <div class="language-switch" aria-label="Language switcher" data-i18n-aria="languageSwitcher">
           <button type="button" class="language-button" data-language="de" aria-pressed="false">DE</button>
           <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
         </div>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
-          aria-label="Open menu">
+          aria-label="Open menu" data-i18n-aria="menuOpen">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -44,11 +44,11 @@
   </header>
 
   <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-      <a href="#about">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+    <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="mobileNavigation">
+      <a href="#about" data-i18n="navAbout">About me</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
       <div class="mobile-nav-footer">
         <button type="button" class="language-button" data-language="de" aria-pressed="false">DE</button>
         <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
@@ -63,13 +63,13 @@
 
       <div class="page-container hero-content reveal reveal-up">
         <div class="hero-title-row">
-          <p class="hero-i-am">I am</p>
+          <p class="hero-i-am" data-i18n="heroIAm">I am</p>
           <div>
             <h1 id="hero-title">Leon Weigang</h1>
-            <p class="hero-role">FRONTEND DEVELOPER</p>
+            <p class="hero-role" data-i18n="heroRole">FRONTEND DEVELOPER</p>
           </div>
         </div>
-        <a class="cta-button hero-button" href="#contact">Let's talk!</a>
+        <a class="cta-button hero-button" href="#contact" data-i18n="heroCta">Let's talk!</a>
       </div>
 
       <div class="hero-socials reveal reveal-left" style="--reveal-delay: .25s">
@@ -86,20 +86,20 @@
         </a>
       </div>
 
-      <a class="scroll-down" href="#about" aria-label="Scroll to About me">
-        <span>Scroll down</span><span class="scroll-arrow" aria-hidden="true">↓</span>
+      <a class="scroll-down" href="#about" aria-label="Scroll to About me" data-i18n-aria="scrollAbout">
+        <span data-i18n="scrollDown">Scroll down</span><span class="scroll-arrow" aria-hidden="true">↓</span>
       </a>
     </section>
 
     <section class="about section" id="about" aria-labelledby="about-title">
-      <!-- <div class="about-bg-shape" aria-hidden="true"></div> -->
+      <div class="about-bg-shape" aria-hidden="true"></div>
       <div class="about-bg-green">
         <img src="assets/backgrounds/photo_shadows.svg" alt="" aria-hidden="true">
       </div>
       <div class="page-container about-grid">
         <div class="about-copy reveal reveal-left">
-          <h2 class="section-title">About me</h2>
-          <p class="lead-copy">Hey there, I'm Leon!<br>
+          <h2 class="section-title" data-i18n="aboutTitle">About me</h2>
+          <p class="lead-copy" data-i18n-html="aboutLead">Hey there, I'm Leon!<br>
             I'm a frontend developer who enjoys turning ideas into intuitive, responsive and accessible web
             experiences.<br>
             I love learning, improving my skills and creating clean solutions with attention to detail.<br><br>
@@ -108,19 +108,19 @@
           <ul class="about-points">
             <li>
               <img src="assets/aboutme_section/located_icon.svg" alt="" aria-hidden="true">
-              <span>Where are you located? Are you open to different ways of working, such as working remotely or even
-                relocating?</span>
+              <span data-i18n="aboutLocated">Where are you located? Are you open to different ways of working, such as
+                working remotely or even relocating?</span>
             </li>
             <li>
               <img src="assets/aboutme_section/mindset_icon.svg" alt="" aria-hidden="true">
-              <span>Show that you are open-minded. Are you enthusiastic about learning new technologies and continually
-                improving your skills?</span>
+              <span data-i18n="aboutMindset">Show that you are open-minded. Are you enthusiastic about learning new
+                technologies and continually improving your skills?</span>
             </li>
             <li>
               <img src="assets/aboutme_section/problem_icon.svg" alt="" aria-hidden="true">
-              <span>A brief description of your problem-solving approach. Do you learn from each challenge and search
-                for the most efficient solution? You can include keywords like: analytical thinking, creativity,
-                persistence and collaboration.</span>
+              <span data-i18n="aboutProblem">A brief description of your problem-solving approach. Do you learn from
+                each challenge and search for the most efficient solution? You can include keywords like: analytical
+                thinking, creativity, persistence and collaboration.</span>
             </li>
           </ul>
         </div>
@@ -157,140 +157,142 @@
 
         <div class="skills-copy reveal reveal-right">
           <div class="title-with-line">
-            <h2 class="section-title" id="skills-title">Skills</h2>
+            <h2 class="section-title" id="skills-title" data-i18n="skillsTitle">Skills</h2>
             <span aria-hidden="true"></span>
           </div>
-          <p>Highlight your experience of working on different projects using different front-end technologies (such as
-            HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies.
-            Mention the importance of continuing education to keep up with the rapid changes in web development.</p>
-          <h3>Looking for <span>another skill?</span></h3>
-          <p>Reveal enthusiasm for learning new technologies and frameworks.</p>
-          <a class="cta-button" href="#contact">Get in touch</a>
+          <p data-i18n="skillsText">Highlight your experience of working on different projects using different front-end
+            technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to
+            new technologies. Mention the importance of continuing education to keep up with the rapid changes in web
+            development.</p>
+          <h3 data-i18n-html="skillsQuestion">Looking for <span>another skill?</span></h3>
+          <p data-i18n="skillsQuestionText">Reveal enthusiasm for learning new technologies and frameworks.</p>
+          <a class="cta-button" href="#contact" data-i18n="getInTouch">Get in touch</a>
         </div>
       </div>
     </section>
 
     <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+      <img class="portfolio-cyan" src="assets/backgrounds/blue_shadow_1.svg" alt="" aria-hidden="true">
       <img class="portfolio-green" src="assets/backgrounds/green_shadow_skills_portfolio.svg" alt="" aria-hidden="true">
       <div class="page-container portfolio-inner">
         <div class="portfolio-heading reveal reveal-left">
           <div class="heading-accent" aria-hidden="true"></div>
           <div>
-            <h2 class="section-title" id="portfolio-title">Portfolio</h2>
-            <p>Explore a selection of my work here – Interact with projects<br class="desktop-only"> to see my skills in
-              action.</p>
+            <h2 class="section-title" id="portfolio-title" data-i18n="portfolioTitle">Portfolio</h2>
+            <p data-i18n-html="portfolioText">Explore a selection of my work here – Interact with projects<br
+                class="desktop-only"> to see my skills in action.</p>
           </div>
         </div>
 
         <div class="portfolio-grid">
           <article class="project-card reveal reveal-up" style="--reveal-delay: .05s">
             <a href="https://example.com/el-pollo-loco" target="_blank" rel="noopener noreferrer"
-              aria-label="Open El Pollo Loco project">
+              aria-label="Open El Pollo Loco project" data-i18n-aria="openElPolloLoco">
               <img src="assets/portfolio_section/elpolloloco_portfolio.png" alt="El Pollo Loco project preview">
-              <span class="project-overlay">Open project ↗</span>
+              <span class="project-overlay" data-i18n="openProject">Open project ↗</span>
             </a>
           </article>
           <article class="project-card reveal reveal-up" style="--reveal-delay: .1s">
-            <a href="https://example.com/join" target="_blank" rel="noopener noreferrer" aria-label="Open JOIN project">
+            <a href="https://example.com/join" target="_blank" rel="noopener noreferrer" aria-label="Open JOIN project"
+              data-i18n-aria="openJoin">
               <img src="assets/portfolio_section/join_portfolio.png" alt="JOIN project preview">
-              <span class="project-overlay">Open project ↗</span>
+              <span class="project-overlay" data-i18n="openProject">Open project ↗</span>
             </a>
           </article>
           <!-- <article class="project-card reveal reveal-up" style="--reveal-delay: .15s">
             <a href="https://example.com/dabubble" target="_blank" rel="noopener noreferrer"
-              aria-label="Open daBubble project">
+              aria-label="Open daBubble project" data-i18n-aria="openDaBubble">
               <img src="assets/portfolio_section/daBubble_portfolio.png" alt="daBubble project preview">
-              <span class="project-overlay">Open project ↗</span>
+              <span class="project-overlay" data-i18n="openProject">Open project ↗</span>
             </a>
           </article> -->
           <!-- <article class="project-card reveal reveal-up" style="--reveal-delay: .2s">
             <a href="https://example.com/pokedex" target="_blank" rel="noopener noreferrer"
-              aria-label="Open Pokédex project">
+              aria-label="Open Pokédex project" data-i18n-aria="openPokedex">
               <img src="assets/portfolio_section/pokedex_portfolio.png" alt="Pokédex project preview">
-              <span class="project-overlay">Open project ↗</span>
+              <span class="project-overlay" data-i18n="openProject">Open project ↗</span>
             </a>
           </article> -->
         </div>
       </div>
     </section>
 
-    <section class="testimonial section" aria-label="Testimonial">
-      <!-- <img class="testimonial-green-glow" src="assets/backgrounds/green_shadow_skills_portfolio.svg"
-        alt="" aria-hidden="true"> -->
-      <img class="testimonial-purple-glow" src="assets/backgrounds/purple_shadow_footer.svg" alt="" aria-hidden="true">
-      <div class="page-container testimonial-inner reveal reveal-up">
-        <div class="quote-mark" aria-hidden="true">“</div>
-        <article class="testimonial-card">
-          <p>Working with Leon was highly constructive. He combines clear communication with a strong attention to
-            detail. He demonstrated exceptional commitment to the project, regularly going the extra mile to resolve
-            critical hurdles. Leon was also responsible for the project's most substantial core component, which he
-            mastered with outstanding technical skill and efficiency</p>
-          <div class="testimonial-author-line">
-            <span></span>
-            <span>Curtis N.W. - Team Partner</span>
-          </div>
-        </article>
-        <div class="testimonial-person">
-          <img src="assets/testimonial_section/curtis.png" alt="Team Partner Image">
-          <!-- <div class="testimonial-person-placeholder">YOUR<br>PHOTO</div> -->
+    <img class="testimonial-green-glow" src="assets/backgrounds/green_shadow_skills_portfolio.svg" alt=""
+      aria-hidden="true">
+    <div class="page-container testimonial-inner reveal reveal-up">
+      <div class="quote-mark" aria-hidden="true">“</div>
+      <article class="testimonial-card">
+        <p data-testimonial-text>Working with Leon was highly constructive. He combines clear communication with a
+          strong attention to detail. He demonstrated exceptional commitment to the project, regularly going the extra
+          mile to resolve critical hurdles. Leon was also responsible for the project's most substantial core component,
+          which he mastered with outstanding technical skill and efficiency.</p>
+        <div class="testimonial-author-line">
+          <span></span>
+          <span data-testimonial-author>Curtis N.W. - Team Partner</span>
         </div>
+      </article>
+      <div class="testimonial-person">
+        <img src="assets/testimonial_section/curtis.png" alt="">
       </div>
-      <div class="testimonial-controls" aria-label="Testimonial controls">
-        <button type="button" aria-label="Previous testimonial">←</button>
-        <button type="button" class="dot is-active" aria-label="Testimonial 1"></button>
-        <button type="button" class="dot" aria-label="Testimonial 2"></button>
-        <button type="button" class="dot" aria-label="Testimonial 3"></button>
-        <button type="button" aria-label="Next testimonial">→</button>
-      </div>
+    </div>
+    <div class="testimonial-controls" aria-label="Testimonial controls" data-i18n-aria="testimonialControls">
+      <button type="button" aria-label="Previous testimonial" data-i18n-aria="previousTestimonial">←</button>
+      <button type="button" class="dot is-active" aria-label="Testimonial 1" data-testimonial-index="0"></button>
+      <button type="button" class="dot" aria-label="Testimonial 2" data-testimonial-index="1"></button>
+      <button type="button" class="dot" aria-label="Testimonial 3" data-testimonial-index="2"></button>
+      <button type="button" aria-label="Next testimonial" data-i18n-aria="nextTestimonial">→</button>
+    </div>
     </section>
 
     <section class="contact section" id="contact" aria-labelledby="contact-title">
       <img class="contact-purple" src="assets/backgrounds/purple_shadow_footer_v2.svg" alt="" aria-hidden="true">
       <div class="page-container contact-inner">
         <div class="contact-heading reveal reveal-up">
-          <h2 class="section-title" id="contact-title">Contact</h2>
+          <h2 class="section-title" id="contact-title" data-i18n="contactTitle">Contact</h2>
           <span aria-hidden="true"></span>
         </div>
         <div class="contact-grid">
           <div class="contact-copy reveal reveal-left">
             <div class="contact-copy-title"><span aria-hidden="true"></span>
-              <h3>Got a problem to solve?</h3>
+              <h3 data-i18n="contactHeading">Got a problem to solve?</h3>
             </div>
-            <p>Encourage people to contact you and describe what role you are interested in. Show that you will add
-              value to their projects through your work.</p>
-            <p>Need a Frontend developer? <strong>Contact me!</strong></p>
+            <p data-i18n="contactText">Encourage people to contact you and describe what role you are interested in.
+              Show that you will add value to their projects through your work.</p>
+            <p data-i18n-html="contactCta">Need a Frontend developer? <strong>Contact me!</strong></p>
           </div>
 
           <form class="contact-form reveal reveal-right" id="contact-form"
             action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="post" novalidate>
             <label>
-              <span class="sr-only">Your name</span>
-              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" minlength="2"
-                required>
+              <span class="sr-only" data-i18n="nameLabel">Your name</span>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name"
+                data-i18n-placeholder="namePlaceholder" minlength="2" required>
             </label>
             <p class="field-error" id="name-error" aria-live="polite"></p>
             <label>
-              <span class="sr-only">Your email</span>
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
+              <span class="sr-only" data-i18n="emailLabel">Your email</span>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="Your email"
+                data-i18n-placeholder="emailPlaceholder" required>
             </label>
             <p class="field-error" id="email-error" aria-live="polite"></p>
             <label>
-              <span class="sr-only">Your message</span>
+              <span class="sr-only" data-i18n="messageLabel">Your message</span>
               <textarea id="message" name="message" rows="6" minlength="10" placeholder="Your message"
-                required></textarea>
+                data-i18n-placeholder="messagePlaceholder" required></textarea>
             </label>
             <p class="field-error" id="message-error" aria-live="polite"></p>
             <label class="privacy-row">
               <input id="privacy" name="privacy" type="checkbox" required>
-              <span>I've read the <a href="privacy-policy.html">privacy policy</a> and agree to the processing of my
-                data as outlined.</span>
+              <span data-i18n-html="privacyConsent">I've read the <a href="privacy-policy.html">privacy policy</a> and
+                agree to the processing of my data as outlined.</span>
             </label>
             <p class="field-error" id="privacy-error" aria-live="polite"></p>
-            <button class="send-button" id="submit-button" type="submit" disabled>Send message :)</button>
+            <button class="send-button" id="submit-button" type="submit" disabled data-i18n="sendMessage">Send message
+              :)</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
-        <a class="back-to-top" href="#hero" aria-label="Back to top">↑</a>
+        <a class="back-to-top" href="#hero" aria-label="Back to top" data-i18n-aria="backToTop">↑</a>
       </div>
     </section>
   </main>
@@ -299,7 +301,7 @@
     <div class="page-container footer-inner">
       <div class="footer-left">
         <a class="footer-logo" href="#hero" aria-label="Leon Weigang home"><span>Leo</span><b>n</b></a>
-        <a href="legal-notice.html">Legal Notice</a>
+        <a href="legal-notice.html" data-i18n="legalNotice">Legal Notice</a>
       </div>
       <p>© Leon Weigang 2026</p>
       <div class="footer-socials">
