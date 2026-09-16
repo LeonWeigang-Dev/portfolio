@@ -755,6 +755,7 @@ textarea:focus-visible {
 }
 
 @media (hover: hover) and (pointer: fine) {
+
     .project-card:hover .project-hover,
     .project-card:focus-within .project-hover {
         opacity: 1;
@@ -1229,6 +1230,10 @@ textarea:focus-visible {
         max-height: 420px;
     }
 
+    .quote-mark {
+        justify-content: center;
+    }
+
     .about-grid,
     .skills-grid {
         gap: 38px
@@ -1264,7 +1269,7 @@ textarea:focus-visible {
 
     .about-bg-green img {
         position: absolute;
-        bottom: 600px;
+        bottom: 400px;
         left: -250px;
         max-height: 1200px;
         max-width: 1500px;
@@ -1273,7 +1278,7 @@ textarea:focus-visible {
         right: -40px;
     }
 
-    .about{
+    .about {
         z-index: 3;
     }
 
@@ -1292,6 +1297,10 @@ textarea:focus-visible {
     .desktop-nav,
     .header-right .language-switch {
         display: none
+    }
+
+    .about-copy h2 {
+        z-index: 900 !important;
     }
 
     .menu-toggle {
@@ -1383,7 +1392,7 @@ textarea:focus-visible {
         padding-bottom: 0;
     }
 
-    .about-photo  {
+    .about-photo {
         z-index: 2 !important;
     }
 
@@ -1422,7 +1431,7 @@ textarea:focus-visible {
         grid-row: 1;
     }
 
-    .skills-copy > p:first-of-type {
+    .skills-copy>p:first-of-type {
         grid-row: 2;
     }
 
@@ -1434,15 +1443,15 @@ textarea:focus-visible {
         padding-left: 0;
     }
 
-    .skills-copy > h3 {
+    .skills-copy>h3 {
         grid-row: 4;
     }
 
-    .skills-copy > p:nth-of-type(2) {
+    .skills-copy>p:nth-of-type(2) {
         grid-row: 5;
     }
 
-    .skills-copy > .cta-button {
+    .skills-copy>.cta-button {
         grid-row: 6;
         justify-self: center;
     }
@@ -1464,7 +1473,8 @@ textarea:focus-visible {
     }
 
     .quote-mark {
-        font-size: 68px
+        font-size: 68px;
+        display: none;
     }
 
     .testimonial-card {
@@ -1599,8 +1609,7 @@ textarea:focus-visible {
     }
 
     .skills-bg-image {
-        left: -120px;
-        width: 850px
+        width: 100%;
     }
 
     .skills-list {
@@ -1719,8 +1728,8 @@ textarea:focus-visible {
     }
 
     .back-to-top {
-        right: 0;
-        bottom: 24px
+        right: 50;
+        bottom: -10px
     }
 
     .footer-logo {
@@ -1745,6 +1754,15 @@ textarea:focus-visible {
         font-size: 24px
     }
 
+    .skill-item img {
+        width: 48px;
+        height: 48px
+    }
+
+    .skill-item strong {
+        font-size: 14px
+    }
+
     .skills-list {
         grid-template-columns: repeat(4, minmax(0, 1fr))
     }
@@ -1766,10 +1784,26 @@ textarea:focus-visible {
     }
 }
 
+@media (min-width: 1560px) {
+    .skills-bg-image {
+        top: -30% !important;
+    }
+}
+
 /* Keep the artwork centered and contained on very wide desktop screens. */
 @media (min-width: 1440px) {
     .page-container {
         width: min(calc(100% - 64px), var(--max));
+    }
+
+    .skills-bg-image {
+        top: -24%;
+    }
+
+    .about-bg-green {
+        display: flex;
+        width: 100%;
+        right: -50%;
     }
 }
 
@@ -1901,7 +1935,7 @@ textarea:focus-visible {
         margin-bottom: 0;
     }
 
-    .skills-copy > p:first-of-type {
+    .skills-copy>p:first-of-type {
         grid-row: 2;
         margin-bottom: 0;
     }
@@ -1914,18 +1948,18 @@ textarea:focus-visible {
         padding-left: 0;
     }
 
-    .skills-copy > h3 {
+    .skills-copy>h3 {
         grid-row: 4;
         font-size: 24px;
         margin: 0;
     }
 
-    .skills-copy > p:nth-of-type(2) {
+    .skills-copy>p:nth-of-type(2) {
         grid-row: 5;
         margin: 0;
     }
 
-    .skills-copy > .cta-button {
+    .skills-copy>.cta-button {
         grid-row: 6;
         justify-self: center;
     }

@@ -222,13 +222,13 @@ const testimonials = [
   },
   {
     en: {
-      text: 'Working with Leon was reliable, collaborative and enjoyable. He is curious, learns quickly and always looks for a clean technical solution.',
+      text: 'Thanks to his exceptional dedication and perseverance, Leon has made a major contribution to the project. Even when faced with difficult problems, he kept at it – often late into the night – and impressed with his meticulous work and high standards.',
       author: 'Annika E. – Team Partner',
       role: 'YOUR PHOTO',
       image: 'assets/testimonial_section/annika.png'
     },
     de: {
-      text: 'Die Zusammenarbeit mit Leon war zuverlässig, teamorientiert und angenehm. Er lernt schnell, bleibt neugierig und sucht immer nach einer sauberen technischen Lösung.',
+      text: 'Leon hat durch seinen außergewöhnlichen Einsatz und seine Ausdauer einen großen Beitrag zum Projekt geleistet. Auch bei schwierigen Problemen blieb er dran – oft bis spät in die Nacht – und überzeugte mit sorgfältiger Arbeit und hoher Qualität.',
       author: 'Annika E. – Teampartner',
       role: 'DEIN FOTO',
       image: 'assets/testimonial_section/annika.png'
