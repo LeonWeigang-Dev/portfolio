@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    title: 'Leon Weigang | Frontend Developer',
+    title: 'Leon Weigang | Portfolio',
     skipContent: 'Skip to content',
     homeAria: 'Leon Weigang home',
     languageSwitcher: 'Language switcher',
@@ -95,7 +95,7 @@ const translations = {
     privacyRightsText: 'Your final privacy policy should explain the applicable data protection rights and provide a current contact route for privacy enquiries.'
   },
   de: {
-    title: 'Leon Weigang | Frontend Entwickler',
+    title: 'Leon Weigang | Portfolio',
     skipContent: 'Zum Inhalt springen',
     homeAria: 'Leon Weigang Startseite',
     languageSwitcher: 'Sprachauswahl',
@@ -236,7 +236,7 @@ const testimonials = [
   }
 ];
 
-let currentLanguage = document.documentElement.lang === 'de' ? 'de' : 'en';
+let currentLanguage = document.documentElement.lang === 'de' ? 'en' : 'de';
 let currentTestimonial = 0;
 const form = document.getElementById('contact-form');
 const submitButton = document.getElementById('submit-button');

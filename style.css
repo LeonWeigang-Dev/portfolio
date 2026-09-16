@@ -92,7 +92,7 @@ textarea:focus-visible {
 }
 
 .site-header {
-    position: fixed;
+    position: sticky;
     inset: 0 0 auto;
     z-index: 100;
     background: rgba(17, 25, 43, .84);
@@ -412,7 +412,8 @@ textarea:focus-visible {
     line-height: 1;
     letter-spacing: -.055em;
     margin: 0;
-    font-weight: 800
+    font-weight: 800;
+    z-index: 4;
 }
 
 .lead-copy {
