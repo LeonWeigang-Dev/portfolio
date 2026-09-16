@@ -1790,7 +1790,6 @@ textarea:focus-visible {
     }
 }
 
-/* Keep the artwork centered and contained on very wide desktop screens. */
 @media (min-width: 1440px) {
     .page-container {
         width: min(calc(100% - 64px), var(--max));
@@ -1807,7 +1806,6 @@ textarea:focus-visible {
     }
 }
 
-/* Exact small-screen tuning for 320px layouts without dropping below 16px text. */
 @media (max-width: 320px) {
     .page-container {
         width: calc(100% - 24px);
@@ -2128,7 +2126,6 @@ textarea:focus-visible {
 }
 
 
-/* Legal pages use the same visual language as the portfolio while keeping the content readable. */
 .legal-page {
     background: var(--bg);
 }
