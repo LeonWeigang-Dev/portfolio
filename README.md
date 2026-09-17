@@ -2,9 +2,18 @@
 
 ## 📖 About the Project
 
-This repository contains the personal portfolio website of **Leon Weigang**, built as a responsive HTML, CSS and JavaScript project for job applications and project presentation.
+This project is the personal portfolio website of **Leon Weigang**, created to present frontend development skills, selected projects, and contact information for professional applications.
 
-The page follows the supplied portfolio design and includes a responsive single-page layout with dedicated legal pages.
+The website is built entirely with **HTML, CSS, vanilla JavaScript, and PHP**. The visual design follows the supplied Figma/reference screenshots and is implemented as a responsive portfolio with dedicated legal pages.
+
+---
+
+## 📸 Preview
+
+The portfolio includes dedicated project visuals for the currently presented work:
+
+![El Pollo Loco](./assets/portfolio_section/elpolloloco_portfolio.png)
+![Join](./assets/portfolio_section/join_portfolio.png)
 
 ---
 
@@ -12,50 +21,60 @@ The page follows the supplied portfolio design and includes a responsive single-
 
 ### 🏠 Portfolio Landing Page
 
-- Full-height hero section with responsive navigation
-- About Me section with profile image and information blocks
-- Skills section with technology icons and learning interaction
-- Portfolio section with project previews and hover information
+- Full-height hero section with fixed header navigation
+- About Me section with portrait, information blocks, and decorative background artwork
+- Skills section with technology icons and an interactive learning popup
+- Portfolio section with animated project cards
+- Hover/focus overlay with GitHub and live-test actions
 - Testimonial carousel with previous/next controls and direct selection
-- Contact section with form validation and server-side submission
+- Contact section with client-side validation and PHP form submission
+- Footer with social links and legal navigation
 
 ### 🌐 Language Switching
 
-- German and English content
-- Translated navigation, headings, form texts, validation messages and accessibility labels
-- Language switching is handled without reloading the page
+- German and English language support
+- Translated navigation, headings, content, form labels, placeholders and validation messages
+- Translated accessibility labels and page titles
+- Language changes without reloading the page
+- Testimonial content switches together with the selected language
 
 ### 📱 Responsive Design
 
-- Responsive layout from **320px** mobile widths up to large desktop screens
-- Content container is capped at **1440px** on wide screens
-- Mobile navigation with burger menu
-- Responsive project cards, testimonials, contact form and footer
-- Additional focus on preventing horizontal overflow on narrow devices
+- Responsive support from **320px** mobile widths to large desktop screens
+- Content width capped at **1440px**
+- Responsive mobile navigation with burger menu
+- Layout adjustments for narrow mobile devices
+- Responsive portfolio cards, testimonials, contact form and footer
+- Horizontal overflow is prevented on narrow viewports
 
 ### ♿ Accessibility
 
 - Semantic HTML structure
-- Skip link for keyboard users
-- Visible focus states
+- Skip-to-content links
+- Visible keyboard focus states
 - ARIA labels and expanded states for interactive navigation
 - Accessible form error messages
-- Keyboard-accessible interactive elements
-- `prefers-reduced-motion` support for animations
+- Keyboard-accessible testimonial and skill interactions
+- Reduced-motion support with `prefers-reduced-motion`
+- Minimum body/form text sizing maintained for narrow screens
 
 ### ✉️ Contact Form
 
-- Required-field validation with feedback after leaving a field
+- Required-field validation on blur
+- Localized validation messages in German and English
+- Red invalid-field feedback for required inputs
 - Client-side validation before submission
-- `fetch()` request to `send_mail.php`
-- JSON response handling for success and error states
+- JSON payload sent with `fetch()` to `send_mail.php`
+- JSON success/error handling
+- Native PHP `mail()` delivery on the server
 
 ### 🎞️ Animations & Interactions
 
-- Scroll reveal animations with `IntersectionObserver`
-- Portfolio hover/focus overlays
-- Testimonial switching
-- Mobile menu transitions
+- Scroll reveal animations using `IntersectionObserver`
+- Portfolio hover/focus animations
+- Testimonial switching with arrows and indicator dots
+- Mobile menu animation and state handling
+- Skill learning popup with responsive positioning
 - Hover and focus feedback for interactive elements
 
 ---
@@ -67,6 +86,8 @@ The page follows the supplied portfolio design and includes a responsive single-
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES6+)
+- Modular CSS files separated by responsibility in the `styles/` directory
+- JavaScript Modules through the `scripts/` directory
 
 ### Backend
 
@@ -75,9 +96,9 @@ The page follows the supplied portfolio design and includes a responsive single-
 
 ### Development & Documentation
 
-- JSDoc comments for JavaScript functions
+- JSDoc documentation for JavaScript functions
 - Git & GitHub
-- Live Server / local PHP server for development
+- VS Code Live Server or local PHP server
 
 ---
 
@@ -87,88 +108,215 @@ The page follows the supplied portfolio design and includes a responsive single-
 portfolio/
 ├── assets/
 │   ├── aboutme_section/       # Portrait and About Me icons
-│   ├── backgrounds/           # Background glows and decorative shapes
+│   ├── backgrounds/           # Decorative background graphics and glows
 │   ├── contact_section/       # Contact-section assets
-│   ├── footer_section/        # Footer icons
+│   ├── footer_section/        # Footer social icons
 │   ├── hero_section/          # Hero glows and social icons
 │   ├── portfolio_section/     # Project preview images
 │   ├── skills_section/        # Skill icons and Skills artwork
 │   └── testimonial_section/   # Testimonial portraits
+├── scripts/
+│   ├── animations.js          # Scroll reveal animation logic
+│   ├── app.js                 # Application initialization
+│   ├── data.js                # Translation and testimonial data
+│   ├── form.js                # Contact form validation and submission
+│   ├── i18n.js                # Language switching and translations
+│   ├── navigation.js          # Mobile navigation logic
+│   └── testimonials.js        # Testimonial carousel logic
+├── styles/
+│   ├── animations.css         # Reveal and motion styles
+│   ├── base.css               # Variables, reset and accessibility basics
+│   ├── header-footer.css      # Header, navigation and footer styles
+│   ├── legal.css              # Legal page styles
+│   ├── responsive.css         # Responsive media queries
+│   └── sections.css           # Main page section styles
 ├── index.html                 # Main portfolio page
 ├── legal-notice.html          # Legal notice page
 ├── privacy-policy.html        # Privacy policy page
-├── script.js                  # JavaScript interactions and translations
-├── style.css                  # Main stylesheet and responsive rules
+├── script.js                  # JavaScript entry point
+├── style.css                  # CSS entry point importing the modular styles
 ├── send_mail.php              # PHP endpoint for the contact form
-├── favicon.svg                # Website favicon
-├── README.md                  # Project documentation
-└── Join_README.md             # Reference documentation for the Join project
+└── README.md                  # Project documentation
 ```
+
+The website favicon is stored at:
+
+```text
+assets/favicon.svg
+```
+
+
 
 ---
 
 ## 🚀 Installation & Setup
 
-### 1. Download or clone the project
+### 1. Clone the repository
 
 ```bash
 git clone <YOUR-REPOSITORY-URL>
 cd <YOUR-REPOSITORY-FOLDER>
 ```
 
-### 2. Run the frontend
+### 2. Run the project locally
 
-For the static frontend, use a local web server such as VS Code Live Server.
+Because the project uses JavaScript modules and a PHP endpoint, run it through a local web server instead of opening `index.html` directly with `file://`.
 
-### 3. Run the PHP endpoint
-
-For the contact form, the project must run on a PHP-enabled server. A local PHP setup can be started with:
+With the PHP development server:
 
 ```bash
 php -S localhost:8000
 ```
 
-Then open `http://localhost:8000/`.
+Then open:
+
+```text
+http://localhost:8000/
+```
+
+Alternatively, VS Code Live Server can be used for frontend development. For the contact form, a PHP-enabled server is required.
 
 ---
 
 ## ✏️ Customization
 
-Before publishing, update:
+Before publishing the website, review and update:
 
 - GitHub and LinkedIn profile links
-- E-mail address and contact information
-- Project GitHub / live-test URLs
+- Contact e-mail address
+- Project GitHub and live-test links
 - Project descriptions and technology lists
-- Portraits and other personal assets
+- Personal images and testimonial portraits
 - Legal notice and privacy policy content
-- PHP mail configuration and hosting details
+- Hosting information
+- PHP mail configuration
 
-The supplied project images and icons are already referenced from the `assets/` directory.
+The current project images and icons are already connected through the `assets/` directory.
 
 ---
 
 ## 📬 Contact Form Setup
 
-`send_mail.php` receives the form data and sends the message to the configured recipient address.
+The contact form sends the following JSON payload to `send_mail.php`:
 
-Make sure that:
+```json
+{
+  "name": "Your name",
+  "email": "your@email.com",
+  "message": "Your message"
+}
+```
 
-- PHP is enabled on the hosting server
-- The configured sender/recipient address is valid
-- The hosting provider allows PHP `mail()`
-- The `From`, `Reply-To` and return-path settings are compatible with the host
+`send_mail.php` validates the request and uses PHP's native `mail()` function for delivery.
 
-A successful request returns a JSON success response; validation or delivery errors return an appropriate JSON error response.
+For production hosting, make sure:
+
+- PHP is enabled
+- The hosting provider supports `mail()`
+- The configured recipient/sender address is valid
+- The mail headers are accepted by the hosting environment
+- HTTPS is enabled for the live website
+
+The frontend expects a JSON response with:
+
+```json
+{
+  "success": true
+}
+```
+
+or an error response with `success: false`.
 
 ---
 
-## ⚠️ Before Publishing
+## 🌍 Localization
 
-The legal pages currently contain project/template content and must be reviewed and completed with the real legally required information before the website is published.
+Translations are stored centrally in:
+
+```text
+scripts/data.js
+```
+
+The language logic is handled by:
+
+```text
+scripts/i18n.js
+```
+
+To add or change translated text, update both the German and English translation objects using the existing keys.
 
 ---
 
-## 📌 Project Notes
+## 📐 Responsive Behavior
 
-The visual design is based on the supplied Figma/reference screenshots. Responsive behavior and interactive effects are implemented with plain HTML, CSS and JavaScript without a frontend framework.
+The portfolio is designed for:
+
+- **320px+ mobile screens**
+- **Tablet layouts**
+- **Desktop layouts**
+- **1440px maximum content width**
+- Large displays with additional outer spacing while keeping the main content capped
+
+The CSS is separated by responsibility so responsive changes can be made primarily in:
+
+```text
+styles/responsive.css
+```
+
+---
+
+## ⚖️ Legal Pages
+
+The project contains:
+
+- `legal-notice.html`
+- `privacy-policy.html`
+
+These pages use the same header, navigation, language switching and footer system as the main portfolio.
+
+Before publishing, all legal information should be reviewed and completed for the actual hosting provider, contact details, data processing and other legally required information. The included pages are project templates and are not legal advice.
+
+---
+
+## 🔧 Code Structure
+
+The JavaScript is split into focused modules:
+
+- `app.js` initializes the application
+- `data.js` contains translations and testimonial data
+- `i18n.js` handles localization
+- `navigation.js` handles the mobile menu
+- `testimonials.js` handles the testimonial carousel
+- `form.js` handles validation and PHP submission
+- `animations.js` handles scroll reveal animations
+
+The CSS is split into:
+
+- base styles
+- header/footer styles
+- page-section styles
+- legal page styles
+- animation styles
+- responsive media queries
+
+The root files `script.js` and `style.css` remain as simple entry points so the HTML pages keep a clean and stable structure.
+
+---
+
+## ✅ Project Status
+
+The current project contains the complete modular portfolio implementation with:
+
+- HTML/CSS/JavaScript frontend
+- German/English localization
+- Responsive layout down to 320px
+- Accessible interaction states
+- Portfolio hover interactions
+- Interactive testimonials
+- Responsive skill-learning popup
+- Contact-form validation
+- PHP/JSON contact-form submission
+- Dedicated legal pages
+- Modular `styles/` and `scripts/` folders
+
+The remaining pre-publishing tasks are mainly personal content, legal review, hosting configuration and verification of the live mail setup.
