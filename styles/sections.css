@@ -108,7 +108,7 @@
 }
 
 .hero-socials .accent-line {
-    width: 100px;
+    width: calc(100px + max(0px, (100vw - var(--max)) / 2));
     height: 3px;
     background: var(--lime);
     margin-right: 2px
@@ -163,6 +163,7 @@
     padding: 74px 0 0;
     min-height: 650px;
     z-index: 0;
+    isolation: isolate;
 }
 
 /* .about-bg-shape {
@@ -186,7 +187,7 @@
     object-fit: contain;
     object-position: center bottom;
     filter: drop-shadow(0 18px 34px rgba(0, 0, 0, .18));
-    z-index: 2;
+    z-index: 1;
     align-self: end;
     justify-self: center;
     width: min(100%, 610px);
@@ -262,6 +263,8 @@
 
 .about-photo {
     width: 100%;
+    position: relative;
+    z-index: 2;
     max-height: 620px;
     top: 100px;
     object-fit: contain;
@@ -271,7 +274,9 @@
 
 .skills {
     padding: 12px 0 110px;
-    min-height: 900px
+    min-height: 900px;
+    z-index: 1;
+    isolation: isolate;
 }
 
 .skills-bg-image {
