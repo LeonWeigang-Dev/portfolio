@@ -33,3 +33,12 @@ The supplied screenshots only contained detailed hover content for El Pollo Loco
 ## Before publishing
 
 Replace the placeholder Github/live URLs, social profile URLs, e-mail address, Formspree endpoint and the legal placeholder data with your real information.
+
+
+## Updated file structure
+
+- `styles/` contains base, header/footer, sections, animations, legal-page and responsive CSS.
+- `scripts/` contains data/i18n, navigation, testimonials, form handling, animations and the application initializer.
+- `style.css` and `script.js` remain as small entry points so the existing HTML structure stays easy to recognize.
+- The contact form posts JSON to `send_mail.php` on the same server. The PHP server must provide a working `mail()` configuration.
+- The learning popup intentionally contains only the requested labels `Python` and `Ki`; the supplied reference shows React/Vue logos, but no Python/Ki assets were present in the project, so no unrelated icons were invented.

@@ -1,0 +1,998 @@
+@media(max-width:1400px) {
+    .about-bg-green {
+        right: -4%;
+    }
+}
+
+@media(max-width:1100px) {
+    .desktop-nav {
+        margin-right: 22px;
+        gap: 20px
+    }
+
+    .about-bg-green {
+        right: -4%;
+        bottom: 50px;
+        width: 50%;
+        max-height: 420px;
+    }
+
+    .quote-mark {
+        justify-content: center;
+    }
+
+    .about-grid,
+    .skills-grid {
+        gap: 38px
+    }
+
+    .skills-list {
+        column-gap: 25px
+    }
+
+    .testimonial-inner {
+        grid-template-columns: 70px 1fr 250px
+    }
+
+    .testimonial-person {
+        width: 230px;
+        height: 230px
+    }
+
+    .testimonial-card {
+        padding-inline: 50px
+    }
+
+    .contact-grid {
+        gap: 46px
+    }
+
+    .contact-heading>span {
+        width: 300px
+    }
+}
+
+@media(max-width:820px) {
+
+    .about {
+        z-index: 3;
+    }
+
+    .skills-bg-image {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        pointer-events: none;
+        top: -55%;
+    }
+
+    .page-container {
+        width: min(calc(100% - 32px), var(--max))
+    }
+
+    .desktop-nav,
+    .header-right .language-switch {
+        display: none
+    }
+
+    .about-copy h2 {
+        z-index: 900 !important;
+    }
+
+    .menu-toggle {
+        display: block
+    }
+
+    .mobile-menu {
+        position: fixed;
+        inset: 74px 0 0;
+        display: block;
+        background: #0f1728;
+        z-index: 90;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: opacity .28s ease, transform .28s var(--ease), visibility .28s
+    }
+
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: none
+    }
+
+    .mobile-nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px
+    }
+
+    .mobile-nav a {
+        font-size: 26px;
+        text-decoration: none
+    }
+
+    .mobile-nav-footer {
+        display: flex;
+        gap: 8px
+    }
+
+    .mobile-nav-footer .language-button {
+        height: 34px
+    }
+
+    .hero-title-row {
+        gap: 18px
+    }
+
+    .hero-i-am {
+        font-size: 36px
+    }
+
+    .hero h1 {
+        font-size: clamp(43px, 9vw, 72px)
+    }
+
+    .hero-role {
+        font-size: clamp(21px, 4.4vw, 31px)
+    }
+
+    .hero-socials {
+        left: 16px
+    }
+
+    .scroll-down {
+        right: 16px
+    }
+
+    .about {
+        padding-top: 60px
+    }
+
+    .about-grid,
+    .skills-grid,
+    .contact-grid,
+    .footer-inner,
+    .testimonial-inner {
+        grid-template-columns: 1fr
+    }
+
+    .about-grid {
+        min-height: auto
+    }
+
+    .about-copy {
+        padding-bottom: 0;
+    }
+
+    .about-photo {
+        z-index: 2 !important;
+    }
+
+    .about-photo-wrap {
+        order: -1;
+        max-width: 520px;
+    }
+
+    .about-bg-shape {
+        right: -250px
+    }
+
+    .about-bg-purple {
+        right: 22%;
+        top: 38%;
+        width: 260px
+    }
+
+    .skills {
+        padding-top: 30px
+    }
+
+    .skills-grid {
+        min-height: auto;
+        z-index: 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+
+    .skills-copy,
+    .about-copy,
+    .contact-copy,
+    .contact-form,
+    .testimonial-card,
+    .portfolio-heading,
+    .portfolio-heading > div,
+    .footer-left,
+    .footer-inner > p {
+        min-width: 0;
+    }
+
+    .skills-copy,
+    .skills-copy > *,
+    .about-copy,
+    .contact-copy,
+    .contact-form {
+        overflow-wrap: anywhere;
+    }
+
+    .skills-copy .title-with-line {
+        position: relative;
+        z-index: 6;
+    }
+
+    .skill-item strong {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .skills-copy {
+        display: contents;
+        margin-top: 18px;
+    }
+
+    .skills-copy .title-with-line {
+        grid-row: 1;
+    }
+
+    .skills-copy>p:first-of-type {
+        grid-row: 2;
+    }
+
+    .skills-list {
+        grid-row: 3;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 42px;
+        column-gap: 8px;
+        padding-left: 0;
+    }
+
+    .skills-copy>h3 {
+        grid-row: 4;
+    }
+
+    .skills-copy>p:nth-of-type(2) {
+        grid-row: 5;
+    }
+
+    .skills-copy>.cta-button {
+        grid-row: 6;
+        justify-self: center;
+    }
+
+    .portfolio-heading {
+        margin-bottom: 24px
+    }
+
+    .portfolio-grid {
+        gap: 14px
+    }
+
+    .project-card .project-image {
+        padding: 36px
+    }
+
+    .testimonial-inner {
+        gap: 22px
+    }
+
+    .quote-mark {
+        font-size: 68px;
+        display: none;
+    }
+
+    .testimonial-card {
+        min-height: 0;
+        padding: 30px;
+        border-radius: 24px
+    }
+
+    .testimonial-person {
+        justify-self: center
+    }
+
+    .contact-heading {
+        justify-content: flex-start
+    }
+
+    .contact-heading>span {
+        flex: 1;
+        width: auto
+    }
+
+    .contact-inner {
+        padding-top: 42px
+    }
+
+    .contact-grid {
+        margin-top: 42px
+    }
+
+    .footer-inner {
+        gap: 30px
+    }
+
+    .footer-left,
+    .footer-inner>p,
+    .footer-socials {
+        align-items: center;
+        justify-content: center;
+        text-align: center
+    }
+
+    .footer-socials {
+        gap: 30px
+    }
+
+    .footer {
+        padding-bottom: 52px
+    }
+}
+
+@media(max-width:560px) {
+    body {
+        font-size: 16px
+    }
+
+    .page-container {
+        width: calc(100% - 28px)
+    }
+
+    .hero {
+        min-height: 760px
+    }
+
+    .hero-title-row {
+        gap: 10px
+    }
+
+    .hero-i-am {
+        font-size: 28px
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 12vw, 50px);
+        letter-spacing: -.06em
+    }
+
+    .hero-role {
+        font-size: 18px;
+        margin-top: 11px;
+        white-space: nowrap
+    }
+
+    .hero-button {
+        margin-top: 35px
+    }
+
+    .hero-socials {
+        bottom: 20px;
+        gap: 14px
+    }
+
+    .hero-socials .accent-line {
+        width: 42px
+    }
+
+    .scroll-down {
+        display: none
+    }
+
+    .about {
+        padding-top: 46px
+    }
+
+    .section-title {
+        font-size: 52px
+    }
+
+    .lead-copy {
+        margin: 32px 0
+    }
+
+    .about-points {
+        gap: 20px
+    }
+
+    .about-points li {
+        grid-template-columns: 35px 1fr;
+        gap: 14px
+    }
+
+    .about-points img {
+        width: 30px;
+        height: 30px
+    }
+
+    .about-photo-wrap {
+        margin-top: 20px
+    }
+
+    .skills {
+        padding-bottom: 80px
+    }
+
+    .skills-bg-image {
+        width: 100%;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: 5px;
+        row-gap: 38px;
+        padding-left: 0
+    }
+
+    .skill-item img {
+        width: 58px;
+        height: 58px
+    }
+
+    .skill-item strong {
+        font-size: 16px
+    }
+
+    .skill-item.learning {
+        grid-column: auto
+    }
+
+    .skills-copy h3 {
+        font-size: 26px
+    }
+
+    .title-with-line {
+        gap: 16px;
+        margin-bottom: 28px
+    }
+
+    .portfolio {
+        padding-top: 20px
+    }
+
+    .desktop-only {
+        display: none
+    }
+
+    .portfolio-heading {
+        align-items: flex-start;
+        gap: 14px
+    }
+
+    .portfolio-heading p {
+        font-size: 16px;
+        margin-top: 20px
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr
+    }
+
+    .project-card {
+        aspect-ratio: 1.04/1
+    }
+
+    .project-card .project-image {
+        padding: 48px
+    }
+
+    .testimonial {
+        padding-top: 46px
+    }
+
+    .testimonial-card p {
+        font-size: 16px
+    }
+
+    .testimonial-author-line {
+        align-items: flex-start;
+        gap: 12px
+    }
+
+    .testimonial-author-line span:last-child {
+        font-size: 16px
+    }
+
+    .testimonial-person {
+        width: 200px;
+        height: 200px
+    }
+
+    .contact {
+        min-height: auto;
+        padding-bottom: 70px
+    }
+
+    .contact-heading h2 {
+        font-size: 54px
+    }
+
+    .contact-copy-title {
+        gap: 18px
+    }
+
+    .contact-copy-title span {
+        width: 42px
+    }
+
+    .contact-copy h3 {
+        font-size: 26px
+    }
+
+    .contact-form textarea {
+        min-height: 180px
+    }
+
+    .privacy-row {
+        font-size: 16px
+    }
+
+    .send-button {
+        font-size: 18px;
+        margin-top: 28px
+    }
+
+    .back-to-top {
+        right: 12px;
+        bottom: -10px
+    }
+
+    .footer-logo {
+        font-size: 48px
+    }
+
+    .footer-inner>p {
+        font-size: 18px
+    }
+}
+
+
+
+    .skill-learning-popup {
+        width: min(260px, calc(100vw - 40px));
+        padding: 15px 14px 16px;
+        border-radius: 22px;
+    }
+
+    .skill-learning-popup p {
+        font-size: 18px;
+    }
+
+    .skill-learning-popup-items {
+        gap: 26px;
+        margin-top: 14px;
+    }
+
+    .skill-learning-popup-items span {
+        font-size: 18px;
+    }
+
+    .project-actions {
+        gap: 8px;
+        padding-inline: 10px;
+    }
+
+    .project-button {
+        min-width: 0;
+        width: 50%;
+        min-height: 46px;
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .project-info {
+        height: 58%;
+        padding: 24px 18px 20px;
+        gap: 12px;
+        border-radius: 24px 24px 10px 10px;
+    }
+@media(max-width:360px) {
+    .hero h1 {
+        font-size: 34px
+    }
+
+    .hero-role {
+        font-size: 16px
+    }
+
+    .hero-i-am {
+        font-size: 24px
+    }
+
+    .skill-item img {
+        width: 48px;
+        height: 48px
+    }
+
+    .skill-item strong {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr))
+    }
+
+    .section-title {
+        font-size: 48px
+    }
+
+    .contact-heading {
+        gap: 14px
+    }
+
+    .contact-heading>span {
+        min-width: 40px
+    }
+
+    .footer-socials {
+        gap: 22px
+    }
+}
+
+@media (min-width: 1560px) {
+    .skills-bg-image {
+        top: -30% !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .page-container {
+        width: min(calc(100% - 64px), var(--max));
+    }
+
+    .skills-bg-image {
+        top: -24%;
+    }
+
+    .about-bg-green {
+        display: flex;
+        width: 100%;
+        right: -50%;
+    }
+}
+
+@media (max-width: 320px) {
+    .page-container {
+        width: calc(100% - 24px);
+    }
+
+    .site-header {
+        background: rgba(17, 25, 43, .94);
+    }
+
+    .header-inner {
+        min-height: 62px;
+    }
+
+    .logo,
+    .footer-logo {
+        font-size: 2.15rem;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-menu {
+        inset: 62px 0 0;
+    }
+
+    .mobile-nav {
+        gap: 22px;
+    }
+
+    .mobile-nav a {
+        font-size: 20px;
+    }
+
+    .hero {
+        min-height: 680px;
+    }
+
+    .hero-title-row {
+        gap: 6px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-i-am {
+        font-size: 22px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero-role {
+        font-size: 16px;
+        letter-spacing: -.02em;
+    }
+
+    .cta-button {
+        min-height: 44px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .hero-button {
+        margin-top: 30px;
+    }
+
+    .hero-socials {
+        bottom: 18px;
+        left: 12px;
+        gap: 11px;
+    }
+
+    .hero-socials .accent-line {
+        width: 34px;
+    }
+
+    .hero-socials img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .about {
+        padding-top: 34px;
+    }
+
+    .section-title,
+    .contact-heading h2 {
+        font-size: 46px;
+    }
+
+    .lead-copy {
+        margin: 26px 0 28px;
+    }
+
+    .about-points {
+        gap: 18px;
+    }
+
+    .about-points li {
+        grid-template-columns: 28px 1fr;
+        gap: 12px;
+    }
+
+    .about-points img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .skills {
+        padding-top: 22px;
+        padding-bottom: 62px;
+    }
+
+    .skills-grid {
+        gap: 22px;
+    }
+
+    .skills-copy {
+        display: contents;
+    }
+
+    .skills-copy .title-with-line {
+        grid-row: 1;
+        margin-bottom: 0;
+    }
+
+    .skills-copy>p:first-of-type {
+        grid-row: 2;
+        margin-bottom: 0;
+    }
+
+    .skills-list {
+        grid-row: 3;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: 4px;
+        row-gap: 28px;
+        padding-left: 0;
+    }
+
+    .skills-copy>h3 {
+        grid-row: 4;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .skills-copy>p:nth-of-type(2) {
+        grid-row: 5;
+        margin: 0;
+    }
+
+    .skills-copy>.cta-button {
+        grid-row: 6;
+        justify-self: center;
+    }
+
+    .skill-item {
+        min-height: 86px;
+        gap: 6px;
+    }
+
+    .skill-item img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .skill-item strong {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .portfolio {
+        padding-top: 12px;
+        padding-bottom: 58px;
+    }
+
+    .portfolio-heading {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .heading-accent {
+        width: 38px;
+    }
+
+    .portfolio-heading p {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+
+    .portfolio-grid {
+        gap: 12px;
+    }
+
+    .project-card {
+        aspect-ratio: 1 / 1.02;
+        border-radius: 10px;
+    }
+
+    .project-card .project-image {
+        padding: 34px;
+    }
+
+    .testimonial {
+        padding: 38px 0 78px;
+    }
+
+    .testimonial-inner {
+        gap: 18px;
+    }
+
+    .quote-mark {
+        width: 60px;
+        height: 70px;
+        font-size: 72px;
+    }
+
+    .testimonial-card {
+        border-width: 3px;
+        border-radius: 20px;
+        padding: 24px 18px;
+    }
+
+    .testimonial-card p {
+        font-size: 16px;
+    }
+
+    .testimonial-author-line {
+        margin-top: 22px;
+        gap: 10px;
+    }
+
+    .testimonial-author-line span:last-child {
+        font-size: 16px;
+    }
+
+    .testimonial-person {
+        width: 118px;
+        height: 118px;
+        border-width: 3px;
+    }
+
+    .testimonial-controls {
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    .testimonial-controls button {
+        font-size: 22px;
+    }
+
+    .contact {
+        padding-bottom: 56px;
+    }
+
+    .contact-inner {
+        padding-top: 34px;
+    }
+
+    .contact-heading {
+        gap: 12px;
+    }
+
+    .contact-heading>span {
+        min-width: 34px;
+    }
+
+    .contact-grid {
+        margin-top: 30px;
+        gap: 28px;
+    }
+
+    .contact-copy-title {
+        gap: 14px;
+    }
+
+    .contact-copy-title span {
+        width: 34px;
+    }
+
+    .contact-copy h3 {
+        font-size: 24px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+        padding-inline: 14px;
+    }
+
+    .contact-form textarea {
+        min-height: 154px;
+    }
+
+    .privacy-row {
+        font-size: 16px;
+    }
+
+    .send-button {
+        margin-top: 24px;
+        font-size: 16px;
+        padding: 11px 24px;
+    }
+
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 34px 0 40px;
+    }
+
+    .footer-inner>p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .skill-learning-popup {
+        left: 0;
+        width: min(300px, calc(100vw - 32px));
+        transform: translateY(12px);
+    }
+
+    .skill-learning-popup::after {
+        left: 38px;
+        transform: none;
+    }
+
+    .skill-item.learning:hover .skill-learning-popup,
+    .skill-item.learning:focus-visible .skill-learning-popup,
+    .skill-item.learning:focus-within .skill-learning-popup {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,41 @@
+.reveal {
+    opacity: 0;
+    transition: opacity .7s ease, transform .8s var(--ease);
+    transition-delay: var(--reveal-delay, 0s)
+}
+
+.reveal-up {
+    transform: translateY(36px)
+}
+
+.reveal-left {
+    transform: translateX(-35px)
+}
+
+.reveal-right {
+    transform: translateX(35px)
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none
+}
+
+@media (prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    .reveal,
+    .project-card,
+    .project-card img,
+    .cta-button,
+    .hero-socials img {
+        transition: none !important
+    }
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important
+    }
+}

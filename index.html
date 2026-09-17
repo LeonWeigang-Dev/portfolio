@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Leon Weigang, Frontend Developer.">
   <meta name="theme-color" content="#11192b">
-  <title>Leon Weigang | Frontend Developer</title>
+  <title>Leon Weigang | Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -32,8 +32,8 @@
 
       <div class="header-right">
         <div class="language-switch" aria-label="Language switcher" data-i18n-aria="languageSwitcher">
-          <button type="button" class="language-button is-active" data-language="de" aria-pressed="false">DE</button>
-          <button type="button" class="language-button" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" class="language-button" data-language="de" aria-pressed="false">DE</button>
+          <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
         </div>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
           aria-label="Open menu" data-i18n-aria="menuOpen">
@@ -50,8 +50,8 @@
       <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
       <div class="mobile-nav-footer">
-        <button type="button" class="language-button is-active" data-language="de" aria-pressed="false">DE</button>
-        <button type="button" class="language-button" data-language="en" aria-pressed="true">EN</button>
+        <button type="button" class="language-button" data-language="de" aria-pressed="false">DE</button>
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
       </div>
     </nav>
   </aside>
@@ -151,8 +151,17 @@
           <div class="skill-item"><img src="assets/skills_section/scrum_icon.svg" alt=""><strong>Scrum</strong></div>
           <div class="skill-item"><img src="assets/skills_section/material_design_icon.svg"
               alt=""><strong>Material<br>design</strong></div>
-          <div class="skill-item learning"><img src="assets/skills_section/more_learning_icon.svg"
-              alt=""><strong>Continually<br>learning</strong></div>
+          <div class="skill-item learning" tabindex="0" aria-describedby="learning-popup">
+            <img src="assets/skills_section/more_learning_icon.svg" alt="">
+            <strong>Continually<br>learning</strong>
+            <div class="skill-learning-popup" id="learning-popup" role="tooltip" aria-hidden="true">
+              <p data-i18n="learningPopup">I have a special interest in learning</p>
+              <div class="skill-learning-popup-items">
+                <span data-i18n="learningPython">Python</span>
+                <span data-i18n="learningKi">Ki</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="skills-copy reveal reveal-right">
@@ -309,7 +318,7 @@
           </div>
 
           <form class="contact-form reveal reveal-right" id="contact-form"
-            action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="post" novalidate>
+            action="send_mail.php" method="post" novalidate>
             <label>
               <span class="sr-only" data-i18n="nameLabel">Your name</span>
               <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name"

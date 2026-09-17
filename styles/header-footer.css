@@ -1,0 +1,148 @@
+.site-header {
+    position: sticky;
+    inset: 0 0 auto;
+    z-index: 100;
+    background: rgba(17, 25, 43, .84);
+    backdrop-filter: blur(14px);
+    transition: background .25s ease
+}
+
+.header-inner {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo,
+.footer-logo {
+    padding-top: 10px;
+    font-weight: 800;
+    font-size: 3rem;
+    text-decoration: none;
+    letter-spacing: -.06em
+}
+
+.logo-white {
+    color: var(--white)
+}
+
+.logo-accent,
+.footer-logo b {
+    color: var(--lime)
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 29px;
+    margin-left: auto;
+    margin-right: 92px
+}
+
+.desktop-nav a {
+    font-size: 22px;
+    text-decoration: none;
+    transition: color .22s ease
+}
+
+.desktop-nav a:hover {
+    color: var(--lime)
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px
+}
+
+.language-switch {
+    display: flex;
+    gap: 14px
+}
+
+.language-button {
+    min-width: 30px;
+    height: 30px;
+    padding: 0 8px;
+    border: 1px solid var(--lime);
+    border-radius: 7px;
+    background: transparent;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer
+}
+
+.language-button.is-active,
+.language-button:hover {
+    background: var(--lime);
+    color: #0b1205
+}
+
+.menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    cursor: pointer
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    margin: 5px auto;
+    transition: transform .25s ease, opacity .25s ease
+}
+
+.mobile-menu {
+    display: none
+}
+
+.footer {
+    padding: 52px 0 92px;
+    background: var(--bg2)
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center
+}
+
+.footer-left {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px
+}
+
+.footer-logo {
+    font-size: 56px;
+    line-height: .9
+}
+
+.footer-left>a:last-child {
+    font-size: 16px;
+    text-decoration: none
+}
+
+.footer-inner>p {
+    text-align: center;
+    font-size: 23px;
+    margin: 0
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 38px
+}
+
+.footer-socials a {
+    width: 24px;
+    height: 24px
+}
