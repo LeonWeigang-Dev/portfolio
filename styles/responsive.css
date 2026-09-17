@@ -202,14 +202,14 @@
     .contact-form,
     .testimonial-card,
     .portfolio-heading,
-    .portfolio-heading > div,
+    .portfolio-heading>div,
     .footer-left,
-    .footer-inner > p {
+    .footer-inner>p {
         min-width: 0;
     }
 
     .skills-copy,
-    .skills-copy > *,
+    .skills-copy>*,
     .about-copy,
     .contact-copy,
     .contact-form {
@@ -548,44 +548,45 @@
 
 
 
-    .skill-learning-popup {
-        width: min(260px, calc(100vw - 40px));
-        padding: 15px 14px 16px;
-        border-radius: 22px;
-    }
+.skill-learning-popup {
+    width: min(260px, calc(100vw - 40px));
+    padding: 15px 14px 16px;
+    border-radius: 22px;
+}
 
-    .skill-learning-popup p {
-        font-size: 18px;
-    }
+.skill-learning-popup p {
+    font-size: 18px;
+}
 
-    .skill-learning-popup-items {
-        gap: 26px;
-        margin-top: 14px;
-    }
+.skill-learning-popup-items {
+    gap: 26px;
+    margin-top: 14px;
+}
 
-    .skill-learning-popup-items span {
-        font-size: 18px;
-    }
+.skill-learning-popup-items span {
+    font-size: 18px;
+}
 
-    .project-actions {
-        gap: 8px;
-        padding-inline: 10px;
-    }
+.project-actions {
+    gap: 8px;
+    padding-inline: 10px;
+}
 
-    .project-button {
-        min-width: 0;
-        width: 50%;
-        min-height: 46px;
-        padding: 8px 10px;
-        font-size: 16px;
-    }
+.project-button {
+    min-width: 0;
+    width: 50%;
+    min-height: 46px;
+    padding: 8px 10px;
+    font-size: 16px;
+}
 
-    .project-info {
-        height: 58%;
-        padding: 24px 18px 20px;
-        gap: 12px;
-        border-radius: 24px 24px 10px 10px;
-    }
+.project-info {
+    height: 58%;
+    padding: 24px 18px 20px;
+    gap: 12px;
+    border-radius: 24px 24px 10px 10px;
+}
+
 @media(max-width:360px) {
     .hero h1 {
         font-size: 34px
@@ -630,9 +631,13 @@
     }
 }
 
-@media (min-width: 1560px) {
+@media (min-width: 1740px) {
     .skills-bg-image {
         top: -30% !important;
+    }
+
+    .skills-cyan-glow {
+        z-index: 2;
     }
 }
 
@@ -650,6 +655,12 @@
         display: flex;
         width: 100%;
         right: -50%;
+    }
+}
+
+@media (max-width: 970px) {
+    .skills-bg-image {
+        top: -15%;
     }
 }
 
@@ -1033,5 +1044,162 @@
     .skill-item.learning:focus-visible .skill-learning-popup,
     .skill-item.learning:focus-within .skill-learning-popup {
         transform: translate(-50%, 0);
+    }
+}
+
+
+/* -------------------------------------------------------------------------
+   Final viewport / stacking fixes
+   These rules only refine the existing styling; JavaScript and markup remain untouched.
+   ------------------------------------------------------------------------- */
+
+@media (max-width: 1555px) {
+    .skill-learning-popup {
+        left: 0;
+        width: min(320px, calc(100vw - 32px));
+        max-width: 320px;
+        transform: translateY(12px);
+    }
+
+    .skill-learning-popup::after {
+        left: 30%;
+        transform: translateX(-50%);
+    }
+
+    .skill-item.learning:hover .skill-learning-popup,
+    .skill-item.learning:focus-visible .skill-learning-popup,
+    .skill-item.learning:focus-within .skill-learning-popup {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 820px) {
+
+    /* Keep the title/content above the background while the background remains
+       above the portrait from the preceding About section. */
+    .skills {
+        position: relative;
+        z-index: 1;
+        isolation: isolate;
+    }
+
+    .skills-bg-image {
+        z-index: 2 !important;
+        top: -70% !important;
+    }
+
+    .skills-grid,
+    .skills-copy .title-with-line {
+        position: relative;
+        z-index: 3;
+        margin-top: 50px;
+    }
+
+    /* Center the green shadow exactly behind the centered mobile portrait. */
+    .about-bg-green {
+        left: 50%;
+        right: auto;
+        top: 146px;
+        bottom: auto;
+        width: min(520px, calc(100vw - 32px));
+        max-height: none;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .about-photo-wrap,
+    .about-photo {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 150px;
+    }
+
+    .footer-left {
+        padding-left: 0px;
+    }
+}
+
+@media(max-width: 710px) {
+    .skills-bg-image {
+        top: -65% !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .skill-learning-popup {
+        width: min(270px, calc(100vw - 28px));
+        max-width: 270px;
+        padding: 12px 12px 14px;
+        border-radius: 18px;
+    }
+
+    .skill-learning-popup p {
+        font-size: 16px;
+    }
+
+    .skill-learning-popup-items {
+        gap: 18px;
+        margin-top: 10px;
+    }
+
+    .skill-learning-popup-items span {
+        font-size: 16px;
+    }
+
+    .skill-learning-popup::after {
+        left: 28%;
+    }
+
+    .about-bg-green {
+        top: 250px;
+        left: 55%;
+        width: min(520px, calc(100vw - 28px));
+    }
+}
+
+@media(max-width: 380px) {
+    .skills-bg-image {
+        top: -68% !important;
+    }
+}
+
+@media(max-width: 365px) {
+    .skills-bg-image {
+        top: -68% !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .skill-learning-popup {
+        left: 0;
+        width: min(250px, calc(100vw - 24px));
+        max-width: 250px;
+    }
+
+    .skill-learning-popup::after {
+        left: 26%;
+    }
+
+    .about-bg-green {
+        top: 200px;
+        width: calc(100vw - 24px);
+    }
+}
+
+@media(max-width: 346px) {
+    .skills-bg-image {
+        top: -68% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-bg-green {
+        top: 200px;
+        left: fit-content;
+        width: calc(100vw - 24px);
+    }
+
+    .skills-bg-image {
+        top: -85% !important;
     }
 }
