@@ -63,8 +63,9 @@
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 17px 32px rgba(96, 239, 23, .28);
-    filter: brightness(1.03)
+    box-shadow: 0 17px 32px rgba(157, 11, 194, 0.28);
+    filter: brightness(1.03);
+    background-color: var(--purple);
 }
 
 .hero-button {
@@ -978,7 +979,7 @@
 .back-to-top {
     position: absolute;
     right: 18px;
-    bottom: 13px;
+    bottom: -35px;
     width: 41px;
     height: 41px;
     border: 2px solid #fff;
