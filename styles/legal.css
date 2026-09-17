@@ -121,6 +121,10 @@
     font-weight: 600;
 }
 
+.update-date {
+    margin-top: 50px !important;
+}
+
 .legal-footer {
     position: relative;
     border-top: 3px solid var(--lime);

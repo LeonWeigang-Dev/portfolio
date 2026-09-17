@@ -17,6 +17,8 @@ export function validateField(field) {
     if (field.id === 'name' && field.value.trim().length < 2) message = t('validationName');
     if (field.id === 'email' && !field.validity.valid) message = t('validationEmail');
     if (field.id === 'message' && field.value.trim().length < 10) message = t('validationMessage');
+
+    field.setCustomValidity(message);
     field.setAttribute('aria-invalid', String(Boolean(message)));
     error.textContent = message;
     return !message;
