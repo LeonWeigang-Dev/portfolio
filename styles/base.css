@@ -93,7 +93,6 @@ textarea:focus-visible {
     outline-offset: 4px
 }
 
-/* Prevent long content from creating horizontal overflow on narrow screens. */
 .grid,
 .page-container,
 main,

@@ -1047,12 +1047,6 @@
     }
 }
 
-
-/* -------------------------------------------------------------------------
-   Final viewport / stacking fixes
-   These rules only refine the existing styling; JavaScript and markup remain untouched.
-   ------------------------------------------------------------------------- */
-
 @media (max-width: 1555px) {
     .skill-learning-popup {
         left: 0;
@@ -1074,9 +1068,6 @@
 }
 
 @media (max-width: 820px) {
-
-    /* Keep the title/content above the background while the background remains
-       above the portrait from the preceding About section. */
     .skills {
         position: relative;
         z-index: 1;
@@ -1095,7 +1086,6 @@
         margin-top: 50px;
     }
 
-    /* Center the green shadow exactly behind the centered mobile portrait. */
     .about-bg-green {
         left: 50%;
         right: auto;
