@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Leon Weigang, Frontend Developer.">
   <meta name="theme-color" content="#11192b">
-  <title>Leon Weigang | Portfolio</title>
+  <title>Leon Weigang</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,9 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#about" data-i18n="navAbout">About me</a>
-        <a href="#skills" data-i18n="navSkills">Skills</a>
-        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="#aboutTitle" data-i18n="navAbout">About me</a>
+        <a href="#skills-title" data-i18n="navSkills">Skills</a>
+        <a href="#portfolio-title" data-i18n="navPortfolio">Portfolio</a>
       </nav>
 
       <div class="header-right">
@@ -45,9 +45,9 @@
 
   <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="mobileNavigation">
-      <a href="#about" data-i18n="navAbout">About me</a>
-      <a href="#skills" data-i18n="navSkills">Skills</a>
-      <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+      <a href="#aboutTitle" data-i18n="navAbout">About me</a>
+      <a href="#skills-title" data-i18n="navSkills">Skills</a>
+      <a href="#portfolio-title" data-i18n="navPortfolio">Portfolio</a>
       <div class="mobile-nav-footer">
         <button type="button" class="language-button" data-language="de" aria-pressed="false">DE</button>
         <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
@@ -90,14 +90,14 @@
       </a>
     </section>
 
-    <section class="about section" id="about" aria-labelledby="about-title">
+    <section class="about section" aria-labelledby="about-title">
       <div class="about-bg-shape" aria-hidden="true"></div>
       <div class="about-bg-green">
         <img src="assets/backgrounds/photo_shadows.svg" alt="" aria-hidden="true">
       </div>
       <div class="page-container about-grid">
         <div class="about-copy reveal reveal-left">
-          <h2 class="section-title" data-i18n="aboutTitle">About me</h2>
+          <h2 class="section-title" id="aboutTitle" data-i18n="aboutTitle">About me</h2>
           <p class="lead-copy" data-i18n-html="aboutLead">Hey there, I'm Leon!<br>
             I'm a frontend developer who enjoys turning ideas into intuitive, responsive and accessible web
             experiences.<br>

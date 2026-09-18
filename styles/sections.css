@@ -518,7 +518,6 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 55px;
     background: #11192b;
     transition: transform .35s var(--ease), filter .35s ease;
     clip-path: inset(0 round 10px)

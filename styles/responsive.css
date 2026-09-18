@@ -273,10 +273,6 @@
         gap: 14px
     }
 
-    .project-card .project-image {
-        padding: 36px
-    }
-
     .testimonial-inner {
         gap: 22px
     }
@@ -363,7 +359,8 @@
     .hero-role {
         font-size: 18px;
         margin-top: 11px;
-        white-space: nowrap
+        white-space: nowrap;
+        color: black;
     }
 
     .hero-button {
@@ -371,7 +368,7 @@
     }
 
     .hero-socials {
-        bottom: 20px;
+        bottom: 40px;
         gap: 14px
     }
 
@@ -474,10 +471,6 @@
 
     .project-card {
         aspect-ratio: 1.04/1
-    }
-
-    .project-card .project-image {
-        padding: 48px
     }
 
     .testimonial {
@@ -895,10 +888,6 @@
     .project-card {
         aspect-ratio: 1 / 1.02;
         border-radius: 10px;
-    }
-
-    .project-card .project-image {
-        padding: 34px;
     }
 
     .testimonial {
