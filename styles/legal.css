@@ -7,7 +7,7 @@
     position: relative;
     min-height: calc(100vh - 170px);
     padding: 64px 0 72px;
-    overflow: hidden;
+    clip-path: inset(0);
 }
 
 .legal-glow {

@@ -591,6 +591,24 @@
     border-radius: 24px 24px 10px 10px;
 }
 
+@media(max-width: 445px) {
+    .skill-item strong {
+        font-size: 14px
+    }
+}
+
+@media(max-width: 396px) {
+
+    .skill-item img {
+        width: 40px;
+        height: 40px
+    }
+
+    .skill-item strong {
+        font-size: 14px
+    }
+}
+
 @media(max-width:360px) {
     .hero h1 {
         font-size: 34px
@@ -605,17 +623,18 @@
     }
 
     .skill-item img {
-        width: 48px;
-        height: 48px
+        width: 36px;
+        height: 36px
     }
 
     .skill-item strong {
-        font-size: 16px;
+        width: 120px;
+        font-size: 14px;
         overflow-wrap: anywhere;
     }
 
     .skills-list {
-        grid-template-columns: repeat(4, minmax(0, 1fr))
+        grid-template-columns: repeat(3, minmax(0, 1fr))
     }
 
     .section-title {
@@ -669,6 +688,10 @@
 }
 
 @media (max-width: 320px) {
+    :root {
+        --header-height: 62px;
+    }
+
     .page-container {
         width: calc(100% - 24px);
     }
@@ -804,7 +827,7 @@
 
     .skills-list {
         grid-row: 3;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         column-gap: 4px;
         row-gap: 28px;
         padding-left: 0;
@@ -832,14 +855,19 @@
     }
 
     .skill-item img {
-        width: 46px;
-        height: 46px;
+        width: 36px;
+        height: 36px
     }
 
     .skill-item strong {
-        font-size: 16px;
-        line-height: 1;
+        width: 120px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
     }
+
+    /* .skills-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    } */
 
     .portfolio {
         padding-top: 12px;
@@ -1165,7 +1193,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 361px) {
     .skill-learning-popup {
         left: 0;
         width: min(250px, calc(100vw - 24px));
@@ -1176,6 +1204,10 @@
         left: 26%;
     }
 
+    .skills-bg-image {
+        top: -58% !important;
+    }
+
     .about-bg-green {
         top: 200px;
         width: calc(100vw - 24px);
@@ -1184,7 +1216,7 @@
 
 @media(max-width: 346px) {
     .skills-bg-image {
-        top: -68% !important;
+        top: -62% !important;
     }
 }
 
@@ -1196,6 +1228,6 @@
     }
 
     .skills-bg-image {
-        top: -85% !important;
+        top: -73% !important;
     }
 }

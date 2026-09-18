@@ -13,13 +13,15 @@ export function updateMenuLabel() {
 }
 
 /**
- * Opens the mobile navigation, locks scrolling and updates ARIA state.
+ * Opens the mobile navigation, locks page scrolling with a fixed body position, and updates ARIA state.
  * @returns {void}
  */
 export function openMobileMenu() {
     const menu = document.getElementById('mobile-menu');
     const toggle = document.querySelector('.menu-toggle');
     if (!menu || !toggle) return;
+    const scrollY = window.scrollY;
+    document.body.style.setProperty('--scroll-lock-top', `-${scrollY}px`);
     menu.classList.add('is-open');
     menu.setAttribute('aria-hidden', 'false');
     toggle.setAttribute('aria-expanded', 'true');
@@ -28,18 +30,21 @@ export function openMobileMenu() {
 }
 
 /**
- * Closes the mobile navigation and restores page scrolling.
+ * Closes the mobile navigation and restores the previous page scroll position.
  * @returns {void}
  */
 export function closeMobileMenu() {
     const menu = document.getElementById('mobile-menu');
     const toggle = document.querySelector('.menu-toggle');
     if (!menu || !toggle) return;
+    const scrollY = Math.abs(parseInt(getComputedStyle(document.body).getPropertyValue('--scroll-lock-top'), 10)) || 0;
     menu.classList.remove('is-open');
     menu.setAttribute('aria-hidden', 'true');
     toggle.setAttribute('aria-expanded', 'false');
     updateMenuLabel();
     document.body.classList.remove('menu-open');
+    document.body.style.removeProperty('--scroll-lock-top');
+    window.scrollTo(0, scrollY);
 }
 
 /**

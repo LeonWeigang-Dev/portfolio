@@ -6,6 +6,24 @@ const submitButton = document.getElementById('submit-button');
 const formStatus = document.getElementById('form-status');
 
 /**
+ * Practical email pattern (based on the browser's own email-validation regex),
+ * but tightened to require a real top-level domain, e.g. "name@example.com"
+ * instead of just "name@example" or "name@localhost".
+ * @type {RegExp}
+ */
+const EMAIL_PATTERN = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+
+/**
+ * Checks whether a string is a fully valid email address, including a proper
+ * domain and top-level domain.
+ * @param {string} value - Raw value to check.
+ * @returns {boolean} True when the value is a valid email address.
+ */
+function isValidEmail(value) {
+    return EMAIL_PATTERN.test(value.trim());
+}
+
+/**
  * Validates one contact form field and updates its accessible error message.
  * @param {HTMLInputElement|HTMLTextAreaElement} field - Field to validate.
  * @returns {boolean} True when the field is valid.
@@ -15,7 +33,7 @@ export function validateField(field) {
     if (!error) return field.checkValidity();
     let message = '';
     if (field.id === 'name' && field.value.trim().length < 2) message = t('validationName');
-    if (field.id === 'email' && !field.validity.valid) message = t('validationEmail');
+    if (field.id === 'email' && !isValidEmail(field.value)) message = t('validationEmail');
     if (field.id === 'message' && field.value.trim().length < 10) message = t('validationMessage');
 
     field.setCustomValidity(message);
