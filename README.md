@@ -12,8 +12,7 @@ The website is built entirely with **HTML, CSS, vanilla JavaScript, and PHP**. T
 
 The portfolio includes dedicated project visuals for the currently presented work:
 
-![El Pollo Loco](./assets/portfolio_section/elpolloloco_portfolio.png)
-![Join](./assets/portfolio_section/join_portfolio.png)
+![Portfolio](./assets/portfolio.png)
 
 ---
 
