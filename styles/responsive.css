@@ -664,6 +664,12 @@
     }
 }
 
+@media (min-width: 4000px) {
+    .skills-bg-image {
+        top: -55% !important;
+    }
+}
+
 @media (min-width: 1440px) {
     .page-container {
         width: var(--max);
