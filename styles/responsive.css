@@ -1,3 +1,4 @@
+
 @media(max-width:1400px) {
     .about-bg-green {
         right: -4%;
@@ -657,6 +658,12 @@
     }
 }
 
+@media (min-width: 2800px) {
+    .skills-bg-image {
+        top: -45% !important;
+    }
+}
+
 @media (min-width: 1440px) {
     .page-container {
         width: var(--max);
@@ -671,6 +678,10 @@
         display: flex;
         width: 100%;
         right: -50%;
+    }
+
+    .portfolio-cyan{
+        z-index: 5;
     }
 }
 

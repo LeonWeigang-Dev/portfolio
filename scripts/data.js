@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    title: 'Leon Weigang | Portfolio',
+    title: 'Leon Weigang',
     skipContent: 'Skip to content',
     homeAria: 'Leon Weigang home',
     languageSwitcher: 'Language switcher',
@@ -134,7 +134,7 @@ const translations = {
 
   },
   de: {
-    title: 'Leon Weigang | Portfolio',
+    title: 'Leon Weigang',
     skipContent: 'Zum Inhalt springen',
     homeAria: 'Leon Weigang Startseite',
     languageSwitcher: 'Sprachauswahl',
