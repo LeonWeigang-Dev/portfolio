@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Leon Weigang, Frontend Developer.">
   <meta name="theme-color" content="#11192b">
-  <title>Leon Weigang</title>
+  <title>Leon Weigang | Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,9 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#aboutTitle" data-i18n="navAbout">About me</a>
-        <a href="#skills-title" data-i18n="navSkills">Skills</a>
-        <a href="#portfolio-title" data-i18n="navPortfolio">Portfolio</a>
+        <a href="#about" data-i18n="navAbout">About me</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
       </nav>
 
       <div class="header-right">
@@ -45,9 +45,10 @@
 
   <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="mobileNavigation">
-      <a href="#aboutTitle" data-i18n="navAbout">About me</a>
-      <a href="#skills-title" data-i18n="navSkills">Skills</a>
-      <a href="#portfolio-title" data-i18n="navPortfolio">Portfolio</a>
+      <a href="#about" data-i18n="navAbout">About me</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
       <div class="mobile-nav-footer">
         <button type="button" class="language-button" data-language="de" aria-pressed="false">DE</button>
         <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
@@ -90,14 +91,14 @@
       </a>
     </section>
 
-    <section class="about section" aria-labelledby="about-title">
+    <section class="about section" id="about" aria-labelledby="about-title">
       <div class="about-bg-shape" aria-hidden="true"></div>
       <div class="about-bg-green">
         <img src="assets/backgrounds/photo_shadows.svg" alt="" aria-hidden="true">
       </div>
       <div class="page-container about-grid">
         <div class="about-copy reveal reveal-left">
-          <h2 class="section-title" id="aboutTitle" data-i18n="aboutTitle">About me</h2>
+          <h2 class="section-title" data-i18n="aboutTitle">About me</h2>
           <p class="lead-copy" data-i18n-html="aboutLead">Hey there, I'm Leon!<br>
             I'm a frontend developer who enjoys turning ideas into intuitive, responsive and accessible web
             experiences.<br>
@@ -145,6 +146,8 @@
           </div>
           <div class="skill-item"><img src="assets/skills_section/supabase_icon.svg" alt=""><strong>Supabase</strong>
           </div>
+          <div class="skill-item"><img src="assets/skills_section/firebase_icon.svg" alt=""><strong>Firebase</strong>
+          </div>
           <div class="skill-item"><img src="assets/skills_section/git_icon.svg" alt=""><strong>Git</strong></div>
           <div class="skill-item"><img src="assets/skills_section/api_icon.svg" alt=""><strong>REST-API</strong></div>
           <div class="skill-item"><img src="assets/skills_section/scrum_icon.svg" alt=""><strong>Scrum</strong></div>
@@ -154,7 +157,7 @@
             <img src="assets/skills_section/more_learning_icon.svg" alt="">
             <strong>Continually<br>learning</strong>
             <div class="skill-learning-popup" id="learning-popup" role="tooltip" aria-hidden="true">
-              <p data-i18n="learningPopup">I have a special interest in learning</p>
+              <p data-i18n="learningPopup">Currently exploring:</p>
               <div class="skill-learning-popup-items">
                 <span data-i18n="learningPython">Python</span>
                 <span data-i18n="learningKi">Ki</span>
@@ -168,12 +171,13 @@
             <h2 class="section-title" id="skills-title" data-i18n="skillsTitle">Skills</h2>
             <span aria-hidden="true"></span>
           </div>
-          <p data-i18n="skillsText">Highlight your experience of working on different projects using different front-end
-            technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to
-            new technologies. Mention the importance of continuing education to keep up with the rapid changes in web
-            development.</p>
+          <p data-i18n="skillsText">I use HTML and CSS to build responsive, accessible interfaces and JavaScript and
+            TypeScript to create clear, interactive functionality. With Angular, I can structure larger front-end
+            applications into reusable components, while REST APIs and Supabase help me connect interfaces with data and
+            services. I use Git and Scrum to keep development organized and maintainable.</p>
           <h3 data-i18n-html="skillsQuestion">Looking for <span>another skill?</span></h3>
-          <p data-i18n="skillsQuestionText">Reveal enthusiasm for learning new technologies and frameworks.</p>
+          <p data-i18n="skillsQuestionText">My goal is to combine these skills to build reliable, user-focused
+            interfaces and choose the right technology for each project.</p>
           <a class="cta-button" href="#contact" data-i18n="getInTouch">Get in touch</a>
         </div>
       </div>
@@ -200,8 +204,9 @@
               <div class="project-actions">
                 <a class="project-button project-button-github" href="https://github.com/LeonWeigang-Dev/el_pollo_loco"
                   target="_blank" rel="noopener noreferrer" data-i18n="github">Github</a>
-                <a class="project-button project-button-live" href="https://www.el-pollo-loco.leon-weigang.de/"
-                  target="_blank" rel="noopener noreferrer" data-i18n="liveTest">Live test</a>
+                <a class="project-button project-button-live"
+                  href="https://leonweigang.developerakademie.net/el_pollo_loco/" target="_blank"
+                  rel="noopener noreferrer" data-i18n="liveTest">Live test</a>
               </div>
               <div class="project-info">
                 <h3 data-i18n="projectElPolloLocoTitle">El Pollo Loco</h3>
@@ -219,8 +224,8 @@
               <div class="project-actions">
                 <a class="project-button project-button-github" href="https://github.com/LeonWeigang-Dev/join"
                   target="_blank" rel="noopener noreferrer" data-i18n="github">Github</a>
-                <a class="project-button project-button-live" href="https://www.join.leon-weigang.de/" target="_blank"
-                  rel="noopener noreferrer" data-i18n="liveTest">Live test</a>
+                <a class="project-button project-button-live" href="https://leonweigang.developerakademie.net/join/"
+                  target="_blank" rel="noopener noreferrer" data-i18n="liveTest">Live test</a>
               </div>
               <div class="project-info">
                 <h3 data-i18n="projectJoinTitle">Join</h3>
@@ -286,7 +291,7 @@
           </div>
         </article>
         <div class="testimonial-person">
-          <img src="assets/testimonial_section/curtis.png" alt="testimonial portrait" data-testimonial-image>
+          <img src="assets/testimonial_section/curtis.png" alt="Curtis testimonial portrait" data-testimonial-image>
         </div>
       </div>
       <div class="testimonial-controls" aria-label="Testimonial controls" data-i18n-aria="testimonialControls">
