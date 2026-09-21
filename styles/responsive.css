@@ -684,7 +684,7 @@
         right: -50%;
     }
 
-    .portfolio-cyan{
+    .portfolio-cyan {
         z-index: 5;
     }
 }
@@ -1048,13 +1048,6 @@
 }
 
 @media (max-width: 560px) {
-    .skill-learning-popup {
-        width: min(180px, calc(100vw - 46px)) !important;
-        max-width: 276px;
-        padding: 14px 13px 15px;
-        border-radius: 20px;
-        left: -10px !important;
-    }
 
     .skill-learning-popup p {
         font-size: 15px;
@@ -1159,7 +1152,8 @@
 
 @media (max-width: 560px) {
     .skill-learning-popup {
-        width: min(270px, calc(100vw - 28px));
+        width: min(180px, calc(100vw - 46px)) !important;
+        left: -45px !important;
         max-width: 270px;
         padding: 12px 12px 14px;
         border-radius: 18px;
@@ -1180,6 +1174,9 @@
 
     .skill-learning-popup::after {
         left: 28%;
+        border-left: 22px solid transparent;
+        border-right: 2px solid transparent;
+        border-top: 18px solid #fff;
     }
 
     .about-bg-green {
@@ -1189,9 +1186,25 @@
     }
 }
 
+@media(max-width: 515px) {
+    .skill-learning-popup {
+        min-width: 50px !important;
+        left: -50px !important;
+        max-width: 150px;
+        padding: 12px 12px 14px;
+        border-radius: 18px;
+    }
+}
+
 @media(max-width: 380px) {
     .skills-bg-image {
         top: -55% !important;
+    }
+
+    .skill-learning-popup {
+        left: 0;
+        width: min(220px, calc(100vw - 24px));
+        max-width: 130px;
     }
 }
 
@@ -1203,9 +1216,9 @@
 
 @media (max-width: 361px) {
     .skill-learning-popup {
-        left: 0;
+        left: -10px !important;
         width: min(250px, calc(100vw - 24px));
-        max-width: 250px;
+        max-width: 120px;
     }
 
     .skill-learning-popup::after {
@@ -1228,6 +1241,14 @@
     }
 }
 
+@media (max-width: 361px) {
+    .skill-learning-popup {
+        left: -15px !important;
+        width: min(250px, calc(100vw - 24px));
+        max-width: 120px;
+    }
+}
+
 @media (max-width: 320px) {
     .about-bg-green {
         top: 200px;
@@ -1235,7 +1256,13 @@
         width: calc(100vw - 24px);
     }
 
+    .skill-learning-popup {
+        left: -25px !important;
+        width: min(250px, calc(100vw - 24px));
+        max-width: 120px;
+    }
+
     .skills-bg-image {
-        top: -55% !important;
+        top: -60% !important;
     }
 }
