@@ -34,11 +34,40 @@ export function initPage() {
         dot.addEventListener('click', () => selectTestimonial(Number(dot.dataset.testimonialIndex)));
     });
 
+    initProjectTouchInteraction();
     initContactForm();
     setLanguage(document.querySelector('.language-button.is-active')?.dataset.language || document.documentElement.lang || 'en');
     updateMenuLabel();
     updateTestimonialUI();
     initRevealAnimations();
+}
+
+
+/**
+ * Enables tap-to-toggle interaction for portfolio project cards on coarse pointer devices.
+ * @returns {void}
+ */
+function initProjectTouchInteraction() {
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (!projectCards.length || !window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
+
+    projectCards.forEach((card) => {
+        card.addEventListener('click', (event) => {
+            if (event.target.closest('.project-button')) return;
+
+            projectCards.forEach((projectCard) => {
+                if (projectCard !== card) projectCard.classList.remove('is-touch-active');
+            });
+
+            card.classList.toggle('is-touch-active');
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('.project-card')) return;
+        projectCards.forEach((card) => card.classList.remove('is-touch-active'));
+    });
 }
 
 initPage();
