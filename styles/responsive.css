@@ -1,4 +1,3 @@
-
 @media(max-width:1400px) {
     .about-bg-green {
         right: -4%;
@@ -65,10 +64,8 @@
 
     .skills-bg-image {
         position: absolute;
-        z-index: 0;
         width: 100%;
         pointer-events: none;
-        top: -55%;
     }
 
     .page-container {
@@ -274,6 +271,10 @@
         gap: 14px
     }
 
+    .project-card .project-image {
+        padding: 36px
+    }
+
     .testimonial-inner {
         gap: 22px
     }
@@ -360,8 +361,7 @@
     .hero-role {
         font-size: 18px;
         margin-top: 11px;
-        white-space: nowrap;
-        color: black;
+        white-space: nowrap
     }
 
     .hero-button {
@@ -369,7 +369,7 @@
     }
 
     .hero-socials {
-        bottom: 40px;
+        bottom: 20px;
         gap: 14px
     }
 
@@ -472,6 +472,10 @@
 
     .project-card {
         aspect-ratio: 1.04/1
+    }
+
+    .project-card .project-image {
+        padding: 48px
     }
 
     .testimonial {
@@ -661,12 +665,6 @@
 @media (min-width: 2800px) {
     .skills-bg-image {
         top: -45% !important;
-    }
-}
-
-@media (min-width: 4000px) {
-    .skills-bg-image {
-        top: -55% !important;
     }
 }
 
@@ -907,6 +905,10 @@
         border-radius: 10px;
     }
 
+    .project-card .project-image {
+        padding: 34px;
+    }
+
     .testimonial {
         padding: 38px 0 78px;
     }
@@ -1116,7 +1118,7 @@
 
     .skills-bg-image {
         z-index: 2 !important;
-        top: -70% !important;
+        top: -55% !important;
     }
 
     .skills-grid,
@@ -1151,7 +1153,7 @@
 
 @media(max-width: 710px) {
     .skills-bg-image {
-        top: -65% !important;
+        top: -55% !important;
     }
 }
 
@@ -1189,13 +1191,13 @@
 
 @media(max-width: 380px) {
     .skills-bg-image {
-        top: -68% !important;
+        top: -55% !important;
     }
 }
 
 @media(max-width: 365px) {
     .skills-bg-image {
-        top: -68% !important;
+        top: -53% !important;
     }
 }
 
@@ -1211,7 +1213,7 @@
     }
 
     .skills-bg-image {
-        top: -58% !important;
+        top: -49% !important;
     }
 
     .about-bg-green {
@@ -1222,7 +1224,7 @@
 
 @media(max-width: 346px) {
     .skills-bg-image {
-        top: -62% !important;
+        top: -50% !important;
     }
 }
 
@@ -1234,6 +1236,6 @@
     }
 
     .skills-bg-image {
-        top: -73% !important;
+        top: -55% !important;
     }
 }

@@ -744,7 +744,8 @@
     display: grid;
     place-items: center;
     background: #22304b;
-    position: relative
+    position: relative;
+    clip-path: circle(50% at 50% 50%);
 }
 
 .testimonial-person img {
@@ -753,13 +754,12 @@
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    clip-path: circle(50% at 50% 50%);
 }
 
 .testimonial-person:after {
     content: "";
     position: absolute;
-    right: -130px;
+    right: -165px;
     top: 50%;
     width: 180px;
     height: 3px;
@@ -973,12 +973,12 @@
     color: var(--purple)
 }
 
-.send-button {
+.send-button:enabled {
     align-self: center;
     margin-top: 36px;
     border: 0;
     border-radius: 10px;
-    background: #a8a9ad;
+    background: var(--lime);
     color: #fff;
     padding: 12px 32px;
     font-size: 22px;
@@ -988,13 +988,25 @@
 }
 
 .send-button:not(:disabled):hover {
-    background: #babcc1;
-    transform: translateY(-2px)
+    transform: translateY(-3px);
+    box-shadow: 0 17px 32px rgba(157, 11, 194, 0.28);
+    filter: brightness(1.03);
+    background-color: var(--purple);
 }
 
 .send-button:disabled {
+    background: #a8a9ad;
     cursor: not-allowed;
-    opacity: .95
+    opacity: .95;
+    align-self: center;
+    margin-top: 36px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px 32px;
+    font-size: 22px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, .28);
+    transition: transform .22s ease, background .22s ease
 }
 
 .form-status {
