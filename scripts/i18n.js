@@ -2,7 +2,7 @@
 import { translations } from './data.js';
 let currentLanguage = document.querySelector('.language-button.is-active')?.dataset.language
     || document.documentElement.lang
-    || 'en';
+    || 'DE';
 
 /**
  * Returns a translated string from the current language.
